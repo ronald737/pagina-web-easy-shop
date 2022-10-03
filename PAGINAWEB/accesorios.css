@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    background-color: #FFBD33;
+    padding: 10px;
+}
+nav ul{
+    text-align: center;
+   list-style-type: none;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 1px;
+    width: 12em;
+    
+}
+nav li:hover {
+    background-color: #FFC300;
+}
+h2{
+    text-align: center;
+}
+.gafas{
+    text-align: center;
+    background-color: aqua;
+}
+.bolso{
+    text-align: center;
+    background-color: coral;
+}
+.gorra{
+    text-align: center;
+    background-color: darkgray;
+}
+.cadena{
+    text-align: center;
+    background-color: gold;
+}
+.reloj{
+    text-align: center;
+    background-color: slateblue;
+}
