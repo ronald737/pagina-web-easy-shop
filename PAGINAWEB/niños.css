@@ -5,7 +5,7 @@
     padding: 10px;
 }
 .temp1{
-    background-color: aqua;
+    
     color: black;
     font-size: 4em ;
     text-align: center ;
@@ -14,14 +14,14 @@
 }
 
 .temporadaniños{
-    background-color: #be9610;
+    
     text-align: center ;
     font-family: "lato";
     font-size: 4em ;
 
 }
 .temporadaniñas{
-    background-color: rgb(231, 199, 156);
+    
     color: black;
     text-align: center;
     font-family: "lato";
@@ -49,27 +49,27 @@ nav li:hover {
 }
 .polo{
     font-size: 2em ;
-    background-color: #d1a40f;
+    
     text-align: center;
 }       
 
 .pantalon{
     font-size: 2em ;
-    background-color: #d1a40f;
+    
     text-align: center;
 
 }
 
 .blusa{
     font-size: 2em ;
-    background-color: antiquewhite;
+   
     text-align: center;
 
 
 }
 .pan{
     font-size: 2em ;
-    background-color: antiquewhite;
+    
     text-align: center;
 
 }
