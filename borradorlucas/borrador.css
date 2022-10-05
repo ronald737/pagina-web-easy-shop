@@ -1,0 +1,56 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: #FFBD33;
+    color: black;
+    padding: 20px;
+ }
+nav {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: #FFBD33;
+}
+h2{
+    text-align: center;
+}
+.conjuntos{
+    text-align: center;
+    font-size: 2em ;
+
+
+}
+
+.vestido{
+    text-align: center;
+    font-size: 2em ;
+    
+
+}
+
+.blusa{
+    text-align: center;
+    font-size: 2em ;
+
+}
+
+.pantalonmujer{
+    text-align: center;
+    font-size: 2em ;
+}
