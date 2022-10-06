@@ -1,56 +1,111 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-h1 {
+h1{
     text-align: center;
-    background-color: #FFBD33;
     color: black;
     padding: 20px;
- }
-nav {
+    font-family: 'open sans'
+}
+
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'open sans';
+    color: white;
+    font-weight: 100;
+    margin-left: 50px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+   list-style: none; 
+   margin: 15px;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-family: 'open sans';
+}
+
+.menu li a:hover{
+    padding: 5px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+/*  nav ul{
+    background-color: black;
+    padding: 15px;
     width: 100%;
     list-style-type: none;
-    text-align: center;
-
+    justify-content: space-between;
+    color: white;
 }
-nav li {
+
+nav li{
     display: inline-flex;
 }
-nav a {
+
+nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px;
-    width: 150px;
+    width: 	150px;
+    font-family: 'open sans'
+} */
+
+h3{
+    text-decoration: overline;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-family: 'open sans'
+    
 }
-nav li:hover {
-    background-color: #FFBD33;
+
+.img-fluid{
+    border: solid;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px black;
 }
+
+select{
+    border-radius: 30px;
+    background-color: #a89332;
+    box-shadow: 5px 5px 10px #a89332;
+}
+p{
+    text-align: center;
+    font-family: 'open sans';
+}
+
+footer{
+    width: 100%;
+    padding: 25px ;
+}
+
+.container_footer{
+    display: flex;
+}
+
 h2{
     text-align: center;
-}
-.conjuntos{
-    text-align: center;
-    font-size: 2em ;
-
-
+    color: black;
+    font-family: 'open sans';
 }
 
-.vestido{
-    text-align: center;
-    font-size: 2em ;
-    
 
-}
 
-.blusa{
-    text-align: center;
-    font-size: 2em ;
 
-}
-
-.pantalonmujer{
-    text-align: center;
-    font-size: 2em ;
-}
