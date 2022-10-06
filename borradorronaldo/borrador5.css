@@ -3,6 +3,16 @@
 }
 
 
+.conjuntos{
+    text-align: center;
+    font-size: 2em ;
+}
+
+.imagen1{
+    
+}
+
+
 h1 {
     text-align: center;
     background-color: #FFBD33;
@@ -29,14 +39,8 @@ nav li:hover {
 }
 h2{
     text-align: center;
-}
-.conjuntos{
-    text-align: center;
-    font-size: 2em ;
 
-
-}
-
+ }
 .vestido{
     text-align: center;
     font-size: 2em ;
