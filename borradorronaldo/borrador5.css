@@ -8,9 +8,33 @@
     font-size: 2em ;
 }
 
-.imagen1{
+.img-fluid{
+    border: 1px solid black ;
+    margin: 1em;
+    padding: 0em;
+    float: left;
+    object-fit: cover;
+    animation: escalar 1.5 infinite alternate;
+
+
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.5);
+    }
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
     
 }
+
+
 
 
 h1 {
