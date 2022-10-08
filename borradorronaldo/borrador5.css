@@ -39,12 +39,18 @@
     
 } */
 .contenedor-galeria{
-   display: flex;
+    background-color: blue;
+   
     width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
+    
+    display: flex;
     max-width: 1000px;
-    margin: auto;
+    margin: 5%;
+
+    flex-direction:row;
+    justify-content:center ;
+    
+    
 
 
 }
@@ -54,8 +60,14 @@
     height: 150px;
     margin-bottom: 30px;
     object-fit: contain;
+    align-items: center;
+
+}
+
+
     /* animation: escalar 1.5s infinite;
     margin: 2em;
+     
     
 }
 @keyframes escalar{
@@ -66,13 +78,6 @@
         transform: scale(1.05);
     }
 } */
- }
-
-.galeria_img:hover{
-    
-}
-
-
 
 
 .p1{
