@@ -69,21 +69,31 @@ p{
     text-align: center;
     font-family: 'open sans';
 }
-
-footer{
-    width: 100%;
-    padding: 25px ;
+div.container-fluid{
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
 
-.container_footer{
-    display: flex;
-}
-
-h2{
+div.a{
     text-align: center;
-    color: black;
-    font-family: 'open sans';
+    text-decoration: none;
 }
+footer p.h5{
+    text-align: justify;  
+}
+
+footer a{
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+} 
+
+
+
+    
+    
+
 
 
 
