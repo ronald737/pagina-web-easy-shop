@@ -1,0 +1,118 @@
+h1{
+  text-align: center;
+  padding: 30px;
+  background-color: orange;
+}
+.contenedor{
+  display: flex;
+  width: 290px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 30px;
+  overflow: hidden;
+  
+}
+.listado{
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 7s infinite;
+}
+.listado, .compra{
+  margin: 0;
+}
+@keyframes cambiar{
+  0%{margin-top: 0;}
+  20%{margin-top: 0;}
+  25%{margin-top: -30px;}
+  50%{margin-top: -30px;}
+  55%{margin-top: -60px;}
+  80%{margin-top: -60px;}
+  85%{margin-top: -30px;}
+  95%{margin-top: -30px;}
+  100%{margin-top: 0;}
+
+
+}
+h3{
+  text-align: center;
+}
+nav{
+   
+    text-align: center;
+    font-weight: 600;
+  }
+nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+
+  }
+  
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+nav a {
+    padding: .5em .8em;
+    color: rgba(8, 8, 8, 0.918);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+nav a::before,
+nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #2E640F;
+    border-right: 3px solid #3E8914;
+    transform: translate(-100%, 50%);
+  }
+  
+nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+  }
+  
+nav a:hover:before,
+nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+nav a:hover { 
+    color: #3DA35D;
+     }
+
+.img-fluid{
+  border-radius: 6px;
+  overflow: hidden;
+  background:#fff ;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  
+}
+.img-fluid:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-3%);
+}

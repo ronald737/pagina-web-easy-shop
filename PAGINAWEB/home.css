@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1 { text-align: center;
+     background-color: #FFBD33;
+     color: black;
+     padding: 20px;
+}
+nav {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: #FFC300;
+}
+img {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+.img-1{
+    padding: 0 20px 20px;
+}
+.img-2{
+    padding: 0 20px 20px;
+}
+.img-3{
+    padding: 0 20px 20px;
+}
+.img-4{
+    padding: 0 20px 20px;
+}
