@@ -38,15 +38,12 @@
     margin: 1em;
     
 } */
-.contenedor-galeria{
-    background-color: blue;
+.galeria{
+    background-color:white;
    
     width: 100%;
-    
-    display: flex;
-    max-width: 1000px;
-    margin: 5%;
 
+    display: flex;
     flex-direction:row;
     justify-content:center ;
     
