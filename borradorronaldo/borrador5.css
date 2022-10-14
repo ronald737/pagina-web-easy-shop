@@ -2,11 +2,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-.conjuntos{
-    text-align: center;
-    font-size: 2em ;
+body{
+    background-color: green;
 }
+
+
 
 /* .img-fluid{
     border: 1px solid black ;
@@ -38,15 +38,12 @@
     margin: 1em;
     
 } */
-.contenedor-galeria{
-    background-color: blue;
+.galeria{
+    background-color:white;
    
     width: 100%;
-    
-    display: flex;
-    max-width: 1000px;
-    margin: 5%;
 
+    display: flex;
     flex-direction:row;
     justify-content:center ;
     
@@ -78,12 +75,14 @@
         transform: scale(1.05);
     }
 } */
+.img-fluid{
+    border: 2px solid rgb(151,149,149);
+    box-shadow: 5px 5px 5px rgb(151, 149, 149);
+    border-radius: 10px;
 
 
-.p1{
-    text-align: center;
+}
 
-  }
 
 h1 {
     text-align: center;
@@ -113,6 +112,49 @@ h2{
     text-align: center;
 
  }
+.p1{
+    text-align: center;
+
+  }
+.categorias{
+    text-align: center;
+}
+
+.contenedor{
+    margin: auto;
+    display: table;
+}
+
+
+.tendencias{
+    float: left ;
+    color: black;
+    position: relative;
+
+}
+/* h3 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: green;
+    border-left: 2px solid #000;
+
+    animation: maquina 5s infinite alternate stops(22);
+
+}
+@keyframes maquina {
+    from{
+        width: 100% ;
+    }
+    to {
+        width: 0;
+    }
+} */
+
+.conjuntos{
+    text-align: center;
+    font-size: 2em ;
+}
 .vestido{
     text-align: center;
     font-size: 2em ;
@@ -125,8 +167,44 @@ h2{
     font-size: 2em ;
 
 }
+.chompas{
+    text-align: center;
+}
 
 .pantalonmujer{
     text-align: center;
     font-size: 2em ;
+}
+.tacones{
+    text-align: center;
+}
+
+
+footer{
+    margin: auto ;
+    background-color: antiquewhite;
+    
+}
+
+
+.footer a {
+    margin: auto;
+    color: yellow ;
+    text-decoration: none;
+
+}
+.contenedor-final{
+    background-color: #7e590a;
+    text-align: center;
+    
+}
+
+footer p.contactanos{
+    text-decoration: none;
+    color: red;
+    
+    
+}
+div{
+    text-decoration: none;
 }
