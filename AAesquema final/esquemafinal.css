@@ -121,3 +121,11 @@
 
 
 }
+.categorias{
+  text-align: center;
+}
+
+.contenedor{
+  margin: auto;
+  display: table;
+}
