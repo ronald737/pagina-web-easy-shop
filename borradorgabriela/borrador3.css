@@ -51,13 +51,14 @@ h3{
 
 .img-fluid{
     border: solid;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px black;
-    transition: all 400ms ease;
+    /* border: 2px solid black; */
+    /* box-shadow: 5px 5px 10px black; */
+    /* transition: all 400ms ease; */
 }
 
 .img-fluid:hover{
-    transform: translate(-3%);
+    transform: scale(1.1);
+    transition: 1s; 
 }
 
 select{
