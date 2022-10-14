@@ -2,10 +2,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
+/* body{
     background-color: green;
 }
-
+ */
 
 
 /* .img-fluid{
@@ -45,10 +45,16 @@ body{
 
     display: flex;
     flex-direction:row;
+    
     justify-content:center ;
     
     
 
+
+}
+
+.img-fluid>cat{
+    border-radius: 25%;
 
 }
 .galeria_img{
@@ -75,6 +81,7 @@ body{
         transform: scale(1.05);
     }
 } */
+
 .img-fluid{
     border: 2px solid rgb(151,149,149);
     box-shadow: 5px 5px 5px rgb(151, 149, 149);

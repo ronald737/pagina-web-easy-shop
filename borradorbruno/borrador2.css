@@ -2,55 +2,217 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@font-face{
+    font-family: Commissioner-Light;
+    src: url(fonts/Poppins-Light.ttf);
+}
 
-h1 {
+@font-face{
+    font-family: Commissioner-Bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face{
+    font-family: Commissioner-ExtraLight;
+    src: url(fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: Commissioner-ExtraBoldItalic;
+    src: url(fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+.titulo {
     text-align: center;
-    background-color: #FFBD33;
+    background-color: #ff9800;
     color: black;
-    padding: 20px;
- }
-nav {
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.menu {
     width: 100%;
     list-style-type: none;
     text-align: center;
+    /*----*/
+    position:absolute;
+}
+
+.menu ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu li{
+    padding: 5px 0px;
+    width: 16.6%;
+    height: 100%;
+  
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
 
 }
-nav li {
-    display: inline-flex;
+
+.menu li:hover {
+    border-top: 2px solid black;
+    background-color: #ff9800;
 }
-nav a {
+
+.menu li:hover a {
+    color: black;
+}
+
+/* menu 2*/
+.menu2{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu2 ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu2 li{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0px;
+    width: 16.6%;
+    height: 100%;
+  
+}
+
+.menu2 a {
     text-decoration: none;
     color: black;
     padding: 10px;
     width: 150px;
+
 }
-nav li:hover {
-    background-color: #FFBD33;
+
+.menu2 li:hover {
+    border-top: 2px solid black;
+    background-color: #ff9800;
 }
+
+.menu2 li:hover a {
+    color: black;
+}
+/* menu 2*/
+
+
 h2{
     text-align: center;
 }
-.conjuntos{
-    text-align: center;
-    font-size: 2em ;
 
-
-}
-
-.vestido{
-    text-align: center;
-    font-size: 2em ;
-    
-
-}
-
-.blusa{
-    text-align: center;
-    font-size: 2em ;
-
-}
-
-.pantalonmujer{
+.subtitulo{
+    font-family: Commissioner-Bold;
+    padding-top: 50px;
+    padding-top: 10px;
+    padding: 10px 0px;
     text-align: center;
     font-size: 2em ;
 }
+
+
+
+/*--------------------------*/
+.fondo_imagen{
+    width: 100%;
+    height: 70vh;
+}
+
+.fondo_imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.container_bloque{
+    padding-bottom: 50px;
+}
+
+.outfits{
+    color: black;
+    text-align: center;
+}
+
+.pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: #ff9800;
+}
+
+.pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pie_pagina .redes_sociales i{
+    color: black;
+    font-size: 30px;
+    padding: 0px 25px;
+}
+
+.pie_pagina .pie_texto{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/*---------nosotros-----------*/
+
+.nosotros {
+   padding-bottom: 50px;
+   display:flex;
+   flex-direction:row;
+   align-content: space-around;
+   justify-content: center;
+}
+
+.nosotros_imagen {
+    width: 40%;
+    height: 90vh;
+    padding: 10px;
+}
+
+.nosotros_imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+.nosotros_texto {
+    width: 40%;
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 110px;
+}
+
+
+.nosotros_texto h6{
+    font-family: Commissioner-Bold;
+    font-size: 20px;
+}
+
+.nosotros_texto p{
+    font-family: Commissioner-Light;
+    font-size: 15px;
+}
+
