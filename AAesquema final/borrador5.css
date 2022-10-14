@@ -1,0 +1,215 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* body{
+    background-color: green;
+}
+ */
+
+
+/* .img-fluid{
+    border: 1px solid black ;
+    margin: 1em; */
+    /* padding: 0em;
+    float: left;
+    object-fit: cover;
+    animation: escalar 1.5 infinite alternate; */
+
+
+/* }
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.5);
+    } */
+/* } */
+
+
+/* }
+.marcas{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    border: 1px solid black;
+    margin: 1em;
+    
+} */
+.galeria{
+    background-color:white;
+   
+    width: 100%;
+
+    display: flex;
+    flex-direction:row;
+    
+    justify-content:center ;
+    
+    
+}
+
+.img-fluid>cat{
+    border-radius: 25%;
+
+}
+.galeria_img{
+
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
+    object-fit: contain;
+    align-items: center;
+
+}
+
+
+    /* animation: escalar 1.5s infinite;
+    margin: 2em;
+     
+    
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.05);
+    }
+} */
+
+.img-fluid{
+    border: 2px solid rgb(151,149,149);
+    box-shadow: 5px 5px 5px rgb(151, 149, 149);
+    border-radius: 10px;
+
+
+}
+
+
+h1 {
+    text-align: center;
+    background-color: #FFBD33;
+    color: black;
+    padding: 20px;
+ }
+nav {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: #FFBD33;
+}
+h2{
+    text-align: center;
+
+ }
+.p1{
+    text-align: center;
+
+  }
+.categorias{
+    text-align: center;
+}
+
+.contenedor{
+    margin: auto;
+    display: table;
+}
+
+
+.tendencias{
+    float: left ;
+    color: black;
+    position: relative;
+
+}
+/* h3 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: green;
+    border-left: 2px solid #000;
+
+    animation: maquina 5s infinite alternate stops(22);
+
+}
+@keyframes maquina {
+    from{
+        width: 100% ;
+    }
+    to {
+        width: 0;
+    }
+} */
+
+.conjuntos{
+    text-align: center;
+    font-size: 2em ;
+}
+.vestido{
+    text-align: center;
+    font-size: 2em ;
+    
+
+}
+
+.blusa{
+    text-align: center;
+    font-size: 2em ;
+
+}
+.chompas{
+    text-align: center;
+}
+
+.pantalonmujer{
+    text-align: center;
+    font-size: 2em ;
+}
+.tacones{
+    text-align: center;
+}
+
+
+footer{
+    margin: auto ;
+    background-color: antiquewhite;
+    
+}
+
+
+.footer a {
+    margin: auto;
+    color: yellow ;
+    text-decoration: none;
+
+}
+.contenedor-final{
+    background-color: #7e590a;
+    text-align: center;
+    
+}
+
+footer p.contactanos{
+    text-decoration: none;
+    color: red;
+    
+    
+}
+div{
+    text-decoration: none;
+}
