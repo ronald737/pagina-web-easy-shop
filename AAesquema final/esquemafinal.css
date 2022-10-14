@@ -123,12 +123,26 @@
 }
 .categorias{
   text-align: center;
+  margin: 20px;
+  font-size: 30px;
 }
 
 .conjuntos{
   text-align: center;
+  margin: 20px;
+  font-size: 30px;
 }
 
 .tendencias{
   text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+.p1{
+  text-align: center;
+
+}
+h2{
+  text-align: center;
+
 }
