@@ -55,7 +55,7 @@
   .listado{
     list-style: none;
     padding-left: 10px;
-    animation: cambiar 7s infinite;
+    animation: cambiar 8s infinite;
   }
   
   @keyframes cambiar{
@@ -72,7 +72,7 @@
   .compra{
     list-style: none;
     padding-left: 10px;
-    animation: fluye 7s infinite;
+    animation: fluye 8s infinite;
   }
   @keyframes fluye{
     0%{margin-top: -10px;}
