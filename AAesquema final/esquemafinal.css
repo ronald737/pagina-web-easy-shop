@@ -180,3 +180,16 @@ footer a{
   padding-left: 30%;
   padding-bottom: 30px;
 } 
+select{
+  border-radius: 30px;
+  background-color: #a89332;
+  box-shadow: 5px 5px 10px #a89332;
+  display: block;
+  color: white;
+  padding: 3px;
+}
+h3{
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
