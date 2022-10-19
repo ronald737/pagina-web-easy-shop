@@ -113,8 +113,11 @@
   box-shadow: 5px 5px 5px rgb(151, 149, 149);
   border-radius: 10px;
   margin-bottom: 10px;
+}
 
-
+.img-fluid:hover{
+  transform: scale(1.1);
+  transition: .3s;
 }
 .categorias{
   text-align: center;
@@ -144,6 +147,11 @@ h2{
 .img1, .img2{
   height: 280px;
   width: 190px;
+}
+
+.img1, .img2:hover{
+  transform: scale(1.1);
+  transition: .3s;
 }
 .pie_pagina{
   padding: 20px 0px;
