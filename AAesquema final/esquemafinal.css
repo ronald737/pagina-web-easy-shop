@@ -168,3 +168,15 @@ h2{
   font-size: 13px;
   color: white;
 }
+footer p.h5{
+  text-align: justify;  
+  padding-left: 30%;
+}
+
+footer a{
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  padding-left: 30%;
+  padding-bottom: 30px;
+} 
