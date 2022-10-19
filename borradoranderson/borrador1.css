@@ -25,6 +25,7 @@ h1{
 .listado, .compra{
   margin: 0;
 }
+
 @keyframes cambiar{
   0%{margin-top: 0;}
   20%{margin-top: 0;}
