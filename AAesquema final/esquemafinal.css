@@ -109,9 +109,10 @@
 
 }
 .img-fluid{
-  border: 2px solid rgb(151,149,149);
+  border: 1px solid black;
   box-shadow: 5px 5px 5px rgb(151, 149, 149);
   border-radius: 10px;
+  margin-bottom: 10px;
 
 
 }
