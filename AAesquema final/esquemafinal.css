@@ -141,3 +141,30 @@ h2{
   text-align: center;
 
 }
+.img1, .img2{
+  height: 280px;
+  width: 190px;
+}
+.pie_pagina{
+  padding: 20px 0px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.pie_pagina .redes_sociales{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.pie_pagina .redes_sociales i{
+  color: white;
+  font-size: 30px;
+  padding: 0px 25px;
+}
+
+.pie_pagina .pie_texto{
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
