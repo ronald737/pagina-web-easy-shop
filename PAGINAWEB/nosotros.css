@@ -21,6 +21,10 @@ nav a {
 nav li:hover {
     background-color: #FFC300;
 }
-.img {
-    padding: 0 20px 20px;
+.img{
+    margin: 20px ;   
+}
+iframe{
+    width: 400px;
+    height: 400px;
 }

@@ -65,6 +65,9 @@ select{
     border-radius: 30px;
     background-color: #a89332;
     box-shadow: 5px 5px 10px #a89332;
+    display: block;
+    text-align: center;
+    width: 70%;
 }
 p{
     text-align: center;
