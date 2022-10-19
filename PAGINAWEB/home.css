@@ -131,3 +131,6 @@ footer a:hover{
 footer{
     background-color: gray;
 }
+.carousel{
+    margin-top: -50px;
+}
