@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Easy Shop</title>
 
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/bootstrap.css">
 
@@ -21,41 +24,163 @@
 </head>
 
 <body>
-    <h1>Easy Shop</h1>
-    <nav>
-        <ul>
-            <li><a href="./webmujer.html">Mujeres<i class="fa-solid fa-heart"></i></a></li>
-            <li><a href="./webhombre.html">Hombres<i class="fa-solid fa-user-tie"></i></a></li>
-            <li><a href="./webniños.html">Niños<i class="fa-solid fa-robot"></i></a></li>
-            <li><a href="./webaccesorios.html">Accesorios<i class="fa-solid fa-umbrella"></i></a></li>
-            <li><a href="./webnosotros.html">Nosotros<i class="fa-solid fa-phone"></i></a></li>
+    <nav class="nav">
+        <div class="logo">Easy Shop</div>
+        <ul class="menu">
+            <li><a href="./webportada.html">Inicio</a></li>
+            <li><a href="./webmujer.html">Mujeres</a></li>
+            <li><a href="./webhombre.html">Hombres</a></li>
+            <li><a href="./webniños.html">Niños</a></li>
+            <li><a href="./webaccesorios.html">Accesorios</a></li>
+            <li><a href="#">Nosotros</a></li>
+
         </ul>
     </nav>
-   <br><br><br>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="img-1"><img src="./img/portada.img/img-1.jpg" alt="" class="img-fluid"></div>
-        </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="img-2"><img src="./img/portada.img/img-2.jpg" alt="" class="img-fluid"></div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
- 
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="img-3"><img src="./img/portada.img/img-3.jpg" alt="" class="img-fluid"></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider_portada/Hinicio.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="tiulo-slider1">First slide label</h5>
+              <p class="parrafo-slider">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider_portada/Hhombre.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="titulo-slider2">DISEÑO Y DESARROLLO DE APLICACIONES WEB Y MÓVILES</h5>
+              <p class="parrafo-slider">Nos dedicamos al desarrollo web y móviles desde hace 10 años. !Somos la mejor opcion¡</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider_portada/Hninos.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="tiulo-slider3 ">Third slide label</h5>
+              <p class="parrafo-slider">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
         </div>
-        
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="img-4"><img src="./img/portada.img/img-4.jpg" alt="" class="img-fluid"></div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="./webaccesorios.html">
+                    <img src="./img/portada.img/img-1.jpg" alt="no carga la imágen u.u" width="500px" height="400px" class="img">
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="./webhombre.html">
+                    <img src="./img/portada.img/img-2.jpg" alt="no carga la imágen u.u" width="500px" height="400px" class="img"> 
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="./webmujer.html">
+                    <img src="./img/portada.img/img-3.jpg" alt="no carga la imágen u.u" width="500px" height="400px" class="img">
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="./webniños.html">
+                    <img src="./img/portada.img/img-4.jpg" alt="no carga la imágen u.u" width="500px" height="400px" class="img">
+                </a>
+            </div>
+
+        </div>
     </div>
-</div>
 
+    <br><br>
+
+    <div class="pie_pagina">
+        <div class="redes_sociales">
+            <a href="http:\\www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="http:\\www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+        </div>
        
+        <p class="pie_texto">
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
+            moda a nivel mundial.
+        </p>
+        
+    </div>
 
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <p class="h5">Nuestra empresa</p>
+                    <div>
+                        <a href="#">Sobre nosotros</a>
+                    </div>
+                    <div>
+                        <a href="#">Contacto</a>
+                    </div>
+                    <div>
+                        <a href="#">Términos de uso</a>
+                    </div>
+                    <div>
+                        <a href="#">Políticas de privacidad</a>
+                    </div>
+                </div>
     
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <p class="h5">Productos</p>
+                    <div>
+                        <a href="#">Mujeres</a>
+                    </div>
+                    <div>
+                        <a href="#">Hombres</a>
+                    </div>
+                    <div>
+                        <a href="#">Niños</a>
+                    </div>
+                    <div>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </div>
+    
+                <div class="col-xs-12 col-md-12 col-lg-4">
+                    <p class="h5">Redes</p>
+                    <div>
+                        <a href="#"><i class="fab fa-facebook-squeare"></i>Facebook</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
