@@ -204,7 +204,9 @@ background-color: #a89332;
 box-shadow: 5px 5px 10px #a89332;
 display: block;
 color: white;
-padding: 3px;
+padding: 3px 30% ;
+width: 100%;
+
 }
 h3{
 text-align: center;
