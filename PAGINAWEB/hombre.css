@@ -207,3 +207,8 @@ h3{
   transform: scale(1.1);
   transition: .3s; 
 }
+p{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
