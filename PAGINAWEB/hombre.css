@@ -197,6 +197,7 @@ select{
   display: block;
   color: white;
   padding: 3px;
+  width: 100%;
 }
 h3{
   text-align: center;
@@ -208,7 +209,7 @@ h3{
   transition: .3s; 
 }
 p{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Open Sans';
 }
