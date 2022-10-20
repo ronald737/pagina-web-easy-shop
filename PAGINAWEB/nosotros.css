@@ -127,7 +127,7 @@ input{
     border-radius: 5px;
     color: black;
     margin-bottom: 10px;
-    background-color: red;
+    background-color: rgb(255, 166, 0);
 }
 
 textarea{
@@ -136,12 +136,12 @@ textarea{
     border-radius: 5px;
     max-width: 300px;
     max-height: 150px;
-    background-color: red;
+    background-color: rgb(255, 166, 0);
     
 }
 .boton{
     margin-top: 20px;
-    background-color: red;
+    background-color: rgb(255, 166, 0);
     max-width: 100%;   
 }
 h5{
@@ -164,7 +164,7 @@ footer{
 form{  
     max-width: 600px;
     background-color: white;
-    box-shadow: 2px 1px 12px rgb(224, 61, 2) ;
+    box-shadow: 2px 1px 12px black;
     margin-top: 6em ;
     
     border-radius: 12px ;
@@ -177,24 +177,24 @@ form{
     color: grey;
 }
 
-input, textarea {
+input{
 
     width: 100%;
     margin: 0.2em ;
     padding: .8em;
     max-width: 500px;
     border: none;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
 textarea{
-    max-height: 200px;
+    max-height: 50px;
     min-height: 100px;
     text-align: center;
 }
 .boton{
-    background-color: red;
+    background-color: rgb(255, 166, 0);
     color: #fff;
 }
 .boton:hover{
