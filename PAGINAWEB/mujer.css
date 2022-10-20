@@ -182,9 +182,12 @@ footer p.h5{
   text-align: justify;  
   padding-left: 30%;
 }
+
+
 footer{
   background: rgb(184, 177, 177);
   padding-bottom: 30px;
+
 }
 footer a{
   margin: auto;
@@ -217,3 +220,8 @@ p{
     text-align: center;
     font-family: 'Open Sans';
 }
+
+footer a:hover{
+  color: black;
+}
+
