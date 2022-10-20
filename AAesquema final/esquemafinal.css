@@ -186,8 +186,16 @@ footer a{
   text-decoration: none;
   color: black;
   padding-left: 30%;
-  padding-bottom: 30px;
+  
 } 
+footer{
+  padding-bottom: 30px;
+  background-color: rgb(184, 177, 177);
+}
+footer a:hover{
+  color: black;
+}
+
 select{
   border-radius: 30px;
   background-color: #a89332;
