@@ -45,7 +45,6 @@
 .img{
     margin: 20px ; 
     box-shadow: 5px 5px 5px black;
-     
 }
 
 h4, p{
@@ -98,8 +97,62 @@ footer a{
 } 
 footer a:hover{
     color: black;
-<<<<<<< HEAD
 }
+
+        /* F O R M U L A R I O */
+
+.container-form{
+    border: 2px solid red;
+    max-width: 600px;
+    margin-top: 3em;
+    margin: auto;
+    background-image: url(./img/nosotros.img/calabasas.jpg);
+    padding: 3em;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+label{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+}
+
+::placeholder{
+    color: white;
+}
+input{
+    background: transparent;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+    background-color: red;
+}
+
+textarea{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 150px;
+    background-color: red;
+    
+}
+.boton{
+    margin-top: 20px;
+    background-color: red;
+    max-width: 100%;   
+}
+h5{
+    text-align: center;
+    font-family: 'open sans';
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+
 
 footer{
     padding-bottom: 30px;
@@ -108,8 +161,7 @@ footer{
 
   /* estilo formulario */
 
-form{
-    
+form{  
     max-width: 600px;
     background-color: white;
     box-shadow: 2px 1px 12px rgb(224, 61, 2) ;
@@ -117,9 +169,7 @@ form{
     
     border-radius: 12px ;
     padding: 2em 2em 2em ;
-    background-image: url(/PAGINAWEB/img/nosotros.img/calabasas.jpg);
-
-    
+    background-image: url(/PAGINAWEB/img/nosotros.img/calabasas.jpg);   
 }
 
 .tabla_titulo{
@@ -134,27 +184,18 @@ input, textarea {
     padding: .8em;
     max-width: 500px;
     border: none;
-    border: 1px solid orangered ;
+    border: 1px solid red;
     border-radius: 10px;
-    font-family: "";
-    
-   
-
-
-
 }
 
 textarea{
     max-height: 200px;
     min-height: 100px;
     text-align: center;
-    
-
 }
 .boton{
     background-color: red;
     color: #fff;
-
 }
 .boton:hover{
     color: black;
@@ -168,7 +209,8 @@ label{
 .p{
     text-align: left;
     color: white;
-    font-family: ;
+    font-family: 'open sans';
 }
 
 /* estilo formulario */
+
