@@ -101,18 +101,21 @@ footer{
 
 form{
     
-    max-width: 700px;
+    max-width: 600px;
     background-color: white;
     box-shadow: 2px 1px 12px rgb(224, 61, 2) ;
     margin-top: 6em ;
     
     border-radius: 12px ;
     padding: 2em 2em 2em ;
-    
+    background-image: url(/PAGINAWEB/img/nosotros.img/calabasas.jpg);
+
     
 }
+
 .tabla_titulo{
     text-align: left;
+    color: grey;
 }
 
 input, textarea {
@@ -124,6 +127,7 @@ input, textarea {
     border: none;
     border: 1px solid orangered ;
     border-radius: 10px;
+    font-family: "";
     
    
 
@@ -137,7 +141,6 @@ textarea{
     text-align: center;
     
 
-
 }
 .boton{
     background-color: red;
@@ -145,7 +148,7 @@ textarea{
 
 }
 .boton:hover{
-    color: blue ;
+    color: black;
     
 }
 label{
@@ -155,5 +158,6 @@ label{
 }
 .p{
     text-align: left;
-
+    color: white;
+    font-family: ;
 }
