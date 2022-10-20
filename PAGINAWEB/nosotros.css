@@ -81,13 +81,15 @@ iframe{
 }
 
 footer p.h5{
-    text-align: justify;  
+    text-align: justify;
+    padding-left: 30%;  
 }
 
 footer a{
     margin: auto;
     text-decoration: none;
     color: black;
+    padding-left: 30%;
 } 
 
 footer a:hover{
@@ -95,8 +97,9 @@ footer a:hover{
 }
 
 footer{
-    background-color: gray;
-}
+    padding-bottom: 30px;
+    background-color: rgb(184, 177, 177);
+  }
 
 
 form{
