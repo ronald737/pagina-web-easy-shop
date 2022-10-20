@@ -1,30 +1,158 @@
-h1{
-    text-align: center;
-    background-color: #FFBD33;
-    padding: 10px;
-}
-nav {
-    width: 100%;
-    list-style-type: none;
-    text-align: center;
 
+            /* M E N Ú */
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
 }
-nav li {
-    display: inline-flex;
+
+.logo{
+    font-size: 40px;
+    font-family: 'open sans';
+    color: white;
+    font-weight: 100;
+    margin-left: 50px;
 }
-nav a {
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+   list-style: none; 
+   margin: 15px;
+}
+
+.nav li a{
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-family: 'open sans';
+}
+
+.menu li a:hover{
+    padding: 5px 15px;
+    background-color: white;
     color: black;
-    padding: 10px;
-    width: 150px;
+    border-radius: 15px;
 }
-nav li:hover {
-    background-color: #FFC300;
-}
+
+        /* I M G */
 .img{
-    margin: 20px ;   
+    margin: 20px ; 
+    box-shadow: 5px 5px 5px black;
+     
+}
+
+h4, p{
+    font-family: 'open sans';
 }
 iframe{
     width: 400px;
     height: 400px;
+}
+
+.pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.pie_pagina .redes_sociales i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 25px;
+}
+
+.pie_pagina, .pie_texto{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+footer p.h5{
+    text-align: justify;  
+}
+
+footer a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+} 
+
+footer a:hover{
+    color: black;
+}
+
+footer{
+    background-color: gray;
+}
+
+
+form{
+    margin: auto ;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 2px 1px 12px orangered ;
+    margin-top: 6em ;
+    border-radius: 12px ;
+    padding: 2em 2em 2em ;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+input, textarea {
+
+    width: 100%;
+    margin: 0.2em ;
+    padding: .8em;
+    max-width: 500px;
+    border: none;
+    border: 1px solid orangered ;
+    border-radius: 10px;
+    
+   
+
+
+
+}
+
+textarea{
+    max-height: 200px;
+    min-height: 100px;
+    text-align: center;
+    
+
+
+}
+.boton{
+    background-color: red;
+    color: #fff;
+
+}
+.boton:hover{
+    color: blue ;
+    
+}
+label{
+    width: 100%;
+    text-align: center;
+
+}
+.p{
+    text-align: left;
+
 }
