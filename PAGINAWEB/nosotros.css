@@ -56,44 +56,49 @@ iframe{
     height: 400px;
 }
 
+       /* PIE DE PÁGINA */
 .pie_pagina{
     padding: 20px 0px;
     width: 100%;
     height: auto;
     background-color: black;
 }
-
+          
 .pie_pagina .redes_sociales{
     text-align: center;
     padding-bottom: 10px;
 }
-
+          
 .pie_pagina .redes_sociales i{
     color: white;
     font-size: 30px;
     padding: 0px 25px;
 }
-
-.pie_pagina, .pie_texto{
+          
+.pie_pagina .pie_texto{
     text-align: center;
     font-size: 13px;
     color: white;
 }
 
-footer p.h5{
-    text-align: justify;
-    padding-left: 30%;  
+footer{
+    background-color:  rgb(184, 177, 177);
 }
-
+footer p.h5{
+    text-align: justify;  
+    padding-left: 30%;
+}
+          
 footer a{
     margin: auto;
     text-decoration: none;
     color: black;
     padding-left: 30%;
+    /* padding-bottom: 30px; */
 } 
-
 footer a:hover{
     color: black;
+<<<<<<< HEAD
 }
 
 footer{
@@ -101,21 +106,25 @@ footer{
     background-color: rgb(184, 177, 177);
   }
 
+  /* estilo formulario */
 
 form{
     
-    max-width: 700px;
+    max-width: 600px;
     background-color: white;
     box-shadow: 2px 1px 12px rgb(224, 61, 2) ;
     margin-top: 6em ;
     
     border-radius: 12px ;
     padding: 2em 2em 2em ;
-    
+    background-image: url(/PAGINAWEB/img/nosotros.img/calabasas.jpg);
+
     
 }
+
 .tabla_titulo{
     text-align: left;
+    color: grey;
 }
 
 input, textarea {
@@ -127,6 +136,7 @@ input, textarea {
     border: none;
     border: 1px solid orangered ;
     border-radius: 10px;
+    font-family: "";
     
    
 
@@ -140,7 +150,6 @@ textarea{
     text-align: center;
     
 
-
 }
 .boton{
     background-color: red;
@@ -148,7 +157,7 @@ textarea{
 
 }
 .boton:hover{
-    color: blue ;
+    color: black;
     
 }
 label{
@@ -158,5 +167,8 @@ label{
 }
 .p{
     text-align: left;
-
+    color: white;
+    font-family: ;
 }
+
+/* estilo formulario */
