@@ -68,7 +68,55 @@ nav li:hover {
     color: black;
     border-radius: 15px;
 }
+.contenedor{
+    display: flex;
+    width: 290px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 500px;
+    overflow: hidden;
+    color: white;
+    margin-top: 10px;
+  }
+.listado{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 8s infinite;
+  }
+  
+  @keyframes cambiar{
+    0%{margin-top: -10px;}
+    20%{margin-top: -10px;}
+    25%{margin-top: -50px;}
+    50%{margin-top: -50px;}
+    55%{margin-top: -90px;}
+    80%{margin-top: -90px;}
+    85%{margin-top: -50px;}
+    95%{margin-top: -50px;}
+    100%{margin-top: 0;}
+  }
+  .compra{
+    list-style: none;
+    padding-left: 10px;
+    animation: fluye 8s infinite;
+  }
+  @keyframes fluye{
+    0%{margin-top: -10px;}
+    20%{margin-top: -10px;}
+    25%{margin-top: -50px;}
+    50%{margin-top: -50px;}
+    55%{margin-top: -90px;}
+    80%{margin-top: -90px;}
+    85%{margin-top: -50px;}
+    95%{margin-top: -50px;}
+    100%{margin-top: 0;}
 
+  }
 .img {
     width: 600px;
     display: block;
@@ -113,19 +161,23 @@ nav li:hover {
 
 
 footer p.h5{
-    text-align: justify;  
+    text-align: justify;
+    padding-left: 30%;  
 }
 
 footer a{
     margin: auto;
     text-decoration: none;
     color: black;
+    padding-left: 30%;
 } 
 
 footer a:hover{
     color: black;
 }
-
 footer{
-    background-color: gray;
-}
+    padding-bottom: 30px;
+    background-color: rgb(184, 177, 177);
+  }
+
+
