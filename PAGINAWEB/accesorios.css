@@ -202,12 +202,14 @@ select{
   box-shadow: 5px 5px 10px #a89332;
   display: block;
   color: white;
-  padding: 3px;
-}
+  padding: 3px 30% 3px 30%;
+  width: 100%;
+   }
 h3{
   text-align: center;
   margin: 50px;
   font-size: 30px;
+  text-decoration: overline;
 }
 .img-fluid:hover{
   transform: scale(1.1);
@@ -216,4 +218,9 @@ h3{
 .main{
     margin-left: 17%;
     margin-top: 25px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans';
 }
