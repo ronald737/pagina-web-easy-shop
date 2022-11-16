@@ -29,3 +29,4 @@ greenBtn.onclick = function() {
 brownBtn.onclick = function() {
     imgchange.src = "./images/camisas/Cdiseño1marron.png";
 }
+
