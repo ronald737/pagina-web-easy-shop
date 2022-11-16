@@ -4,18 +4,28 @@
 
 let redBtn = document.getElementById("red");
 let blueBtn = document.getElementById("blue");
-let blackBtn = document.getElementById("black");
+let yellowBtn = document.getElementById("yellow");
+let greenBtn = document.getElementById("green");
+let brownBtn = document.getElementById("brown");
 let imgchange = document.getElementById("imgchange");
 
 redBtn.onclick = function() {
 
-    imgchange.src = "./images/arkana_red_md.jpg";
+    imgchange.src = "./images/camisas/Cdiseño1rojo.png";
 }
 
 blueBtn.onclick = function() {
-    imgchange.src = "./images/arkana_blue_md.jpg";
+    imgchange.src = "./images/camisas/Cdiseño1azul.png";
 }
 
-blackBtn.onclick = function() {
-    imgchange.src = "./images/arkana_black_md.jpg";
+yellowBtn.onclick = function() {
+    imgchange.src = "./images/camisas/Cdiseño1amarillo.png";
+}
+
+greenBtn.onclick = function() {
+    imgchange.src = "./images/camisas/Cdiseño1verde.png";
+}
+
+brownBtn.onclick = function() {
+    imgchange.src = "./images/camisas/Cdiseño1marron.png";
 }
