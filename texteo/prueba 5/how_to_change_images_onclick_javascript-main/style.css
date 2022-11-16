@@ -51,4 +51,17 @@
 
 .color-select #black {
     background: #333;
-} 
+}
+.color-select #yellow{
+    background: yellow;
+}
+.color-select #green{
+    background: green;
+}
+.color-select #brown{
+    background: brown;
+}
+img{
+    width: 400px;
+    margin-left: 465px;
+}
