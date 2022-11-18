@@ -11,22 +11,22 @@ let imgchange = document.getElementById("imgchange");
 
 redBtn.onclick = function() {
 
-    imgchange.src = "./images/pantalones/Pdiseño2rojo.png";
+    imgchange.src = "./images/Pdiseño2rojo.png";
 }
 
 blueBtn.onclick = function() {
-    imgchange.src = "./images/pantalones/Pdiseño2azul.png";
+    imgchange.src = "./images/Pdiseño2azul.png";
 }
 
 yellowBtn.onclick = function() {
-    imgchange.src = "./images/pantalones/Pdiseño2amarillo.png";
+    imgchange.src = "./images/Pdiseño2amarillo.png";
 }
 
 greenBtn.onclick = function() {
-    imgchange.src = "./images/pantalones/Pdiseño2verde.png";
+    imgchange.src = "./images/Pdiseño2verde.png";
 }
 
 brownBtn.onclick = function() {
-    imgchange.src = "./images/pantalones/Pdiseño2marron.png";
+    imgchange.src = "./images/Pdiseño2marron.png";
 }
 
