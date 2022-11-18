@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-Medium.ttf";
+    src: url("../font/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light.ttf";
+    src: url("../font/Poppins-Light.ttf");
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/navi1.jpg");
+    background-size: cover;
+    color: black;
+}
+
+.contenedor_general{
+    height: 95vh;
+}
+
+.contenedor_form{
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    width: 80%;
+}
+
+.titulo_texto{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.titulo_texto h3{
+    font-family: "Poppins-Medium.ttf";
+}
+
+.titulo_texto p{
+    font-family: "Poppins-Light.ttf";
+}
+
+input{
+    background: transparent !important;
+}
+
+textarea{
+    background: transparent !important;
+}
+
+button{
+    background: transparent !important;
+    border: 1px solid white !important;
+}
