@@ -1,67 +1,33 @@
-
-* {
+*{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-
-.container {
-    width: 100vw;
-    height: 100vh;
+/* h1 { text-align: center;
+     background-color: #FFBD33;
+     color: black;
+     padding: 20px;
 }
-
- div.container h3 {
-    color: #444;
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: 30px;
+nav {
+    width: 100%;
+    list-style-type: none;
     text-align: center;
-}
 
-.color-select {
-    width: 100vw;
-    height: 50px;
-    background-color: rgb(255, 254, 168);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
 }
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: #FFC300;
+} */
 
-.color-select div {
-    background: rgb(6, 147, 207);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 30px;
-    cursor: pointer;    
-}
+         /* menu */
 
-.color-select #red {
-    background: rgb(207, 6, 23);
-}
-
-.color-select #blue {
-    background: rgb(6, 147, 207);
-}
-
-.color-select #black {
-    background: #333;
-}
-.color-select #yellow{
-    background: yellow;
-}
-.color-select #green{
-    background: green;
-}
-.color-select #brown{
-    background: brown;
-}
-img{
-    width: 400px;
-    margin-left: 680px;
-}
 .nav{
     width: 100%;
     background-color: black;
@@ -112,7 +78,7 @@ img{
     top: 30px;
     right: 0;
     bottom: 0;
-    left: 400px;
+    left: 350px;
     overflow: hidden;
     color: white;
     margin-top: 10px;
@@ -254,10 +220,8 @@ footer{
     color: #317CC6;
     background: #fff;
   }
-  .original{
-    margin-left: 450px;
-  }
-  .text1{
+
+h2{
     text-align: center;
     font-size: 50px;
-  }
+}
