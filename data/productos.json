@@ -1,10 +1,10 @@
 [
 	{
 		"id": 1,
-		"marca": "NOMBRE",
+		"marca": "conjunto",
 		"imagen": "./img/mujer.img/carritomujer/conjunto1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "150",
+		"detalles": ["tela ", "modelo ", "temporada primavera "]
 	},
 	{
 		"id": 2,
@@ -57,6 +57,27 @@
 	},
 	{
 		"id": 9,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 10,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 11,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 12,
 		"marca": "NOMBRE",
 		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
 		"precio": "PRECIO",
