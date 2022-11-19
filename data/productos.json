@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/conjunto1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 2,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/conjunto2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 3,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/conjunto3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 4,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/vestido1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 5,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/vestido2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 6,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/vestido5.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 7,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 8,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 9,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	}
+]
