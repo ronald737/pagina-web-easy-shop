@@ -1,0 +1,44 @@
+/* PIE DE PAGINA */
+.pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+  
+  .pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .pie_pagina .redes_sociales i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 25px;
+  }
+  
+  .pie_pagina, .pie_texto{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+  }
+  footer p.h5{
+    text-align: justify;  
+    padding-left: 30%;
+  }
+  
+  footer a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+    
+  } 
+  footer{
+    padding-bottom: 30px;
+    background-color: rgb(184, 177, 177);
+  }
+  footer a:hover{
+    color: black;
+  }
+  

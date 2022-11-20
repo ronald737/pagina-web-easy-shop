@@ -256,6 +256,137 @@
 		"precio": "220",
 		"detalles": [" Color Verdeso", " Modelo Formal", " Temporada 2022"]
 
+	},
+
+
+
+
+	{
+		"id": 37,
+		"marca": "niñas ",
+		"imagen": "./img/niños.img/niñas/blusa/blusa1.jpg",
+		"precio": "150",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 38,
+		"marca": " ",
+		"imagen": "./img/niños.img/niñas/blusa/blusa2.jpg",
+		"precio": "160",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 39,
+		"marca": " ",
+		"imagen": "./img/niños.img/niñas/blusa/blusa3.jpg",
+		"precio": "180",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 40,
+		"marca": "pantalon",
+		"imagen": "./img/niños.img/niñas/jean/pan1.jpg",
+		"precio": "200",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 41,
+		"marca": "VESTIDO ",
+		"imagen": "./img/niños.img/niñas/jean/pan2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 42,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niñas/jean/pan3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 43,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niñas/tacos/taco1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 44,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niñas/tacos/taco2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 45,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niñas/tacos/taco3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 46,
+		"marca": "niños",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 47,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 48,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 49,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/polo/polo1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 50,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/polo/polo2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 51,
+		"marca": "prueba",
+		"imagen": "./img/niños.img/niños/polo/polo3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 52,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/zapato/zapato1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 53,
+		"marca": "NOMBRE",
+		"imagen": "./img/niños.img/niños/zapato/zapato2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 54,
+		"marca": "prueba",
+		"imagen": "./img/niños.img/niños/zapato/zapato3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+
 	}
 
 
