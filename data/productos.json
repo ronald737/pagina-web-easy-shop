@@ -393,52 +393,52 @@
 
 	{
 		"id": 55,
-		"marca": "LENTES ",
+		"marca": "Ray Ban",
 		"imagen": "./img/accesorios.img/Gafas-1.jpg",
-		"precio": "150",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": ["lentes de sol", "Clasico Redondo 50mm", "RB3447 001 "]
 	},
 	{
 		"id": 56,
-		"marca": " ",
+		"marca": " JackJad",
 		"imagen": "./img/accesorios.img/Gafas-2.jpg",
-		"precio": "160",
-		"detalles": [" ", " ", " "]
+		"precio": "35",
+		"detalles": ["Gafas de Sol Redondas de Metal ", " Lentes de Cristal Óptico de Calidad  ", "  Diseño Clásico de Marca Retro "]
 	},
 	{
 		"id": 57,
-		"marca": " ",
+		"marca": "Ray Ban ",
 		"imagen": "./img/accesorios.img/Gafas-3.jpg",
-		"precio": "180",
-		"detalles": [" ", " ", " "]
+		"precio": "60",
+		"detalles": [" Gafas Pro Acme", "Lentes Transparentes ", " Marco de Metal Redondo Pequeño Retro"]
 	},
 	{
 		"id": 58,
-		"marca": "pantalon",
+		"marca": "Victoria Secret",
 		"imagen": "./img/accesorios.img/bolso-1.jpg",
-		"precio": "200",
-		"detalles": [" ", " ", " "]
+		"precio": "150",
+		"detalles": ["Cierre Magnético  ", "Bolso Morado KLEHOPE 10 piezas  ", "Botones Magnéticos "]
 	},
 	{
 		"id": 59,
-		"marca": "VESTIDO ",
+		"marca": "Velez ",
 		"imagen": "./img/accesorios.img/bolso-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "250",
+		"detalles": ["Bolso Maletin de Cuero para Negocios", "Unisex Vintage con Correa Negra  ", "Dos compartimientos interiores con forro de algodon con cremallera "]
 	},
 	{
 		"id": 60,
-		"marca": "NOMBRE",
+		"marca": "Velez ",
 		"imagen": "./img/accesorios.img/cartera-1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "25",
+		"detalles": [" Billetara Corta Negro ", " Plegada para Mujer ", "Estilo Sencila Europeo "]
 	},
 	{
 		"id": 61,
-		"marca": "NOMBRE",
+		"marca": "Now",
 		"imagen": "./img/accesorios.img/gorra-1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "70",
+		"detalles": [" Gorra Floyd Vintage Gris", " Ajuste de Correa en la parte posterior", " Fabricado con algodón prelevado"]
 	},
 	{
 		"id": 62,
