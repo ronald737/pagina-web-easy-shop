@@ -29,101 +29,101 @@
 	},
 	{
 		"id": 5,
-		"marca": "VESTIDO ",
+		"marca": "VESTIDO TUBO",
 		"imagen": "./img/mujer.img/carritomujer/vestido2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "120",
+		"detalles": ["Color Gris ", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 6,
-		"marca": "NOMBRE",
+		"marca": "VESTIDO DE NOVIA",
 		"imagen": "./img/mujer.img/carritomujer/vestido5.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "250",
+		"detalles": [" Color Blanco", " Modelo Juvenil", " Temporada 2022"]
 	},
 	{
 		"id": 7,
-		"marca": "NOMBRE",
+		"marca": "CHOMPA AMERICANA",
 		"imagen": "./img/mujer.img/carritomujer/blusa1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "190",
+		"detalles": [" Color Beige", " Modelo Juvenil", "Temporada 2022 "]
 	},
 	{
 		"id": 8,
-		"marca": "NOMBRE",
+		"marca": "CHOMPA BOMBER",
 		"imagen": "./img/mujer.img/carritomujer/blusa2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "110",
+		"detalles": [" Color Turquesa", " Modelo Juvenil", " Temporada 2022"]
 	},
 	{
 		"id": 9,
-		"marca": "NOMBRE",
+		"marca": " CUELLO TORTUGA",
 		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "170",
+		"detalles": [" Color Beige", " Modelo Formal", "Temporada 2022 "]
 	},
 	{
 		"id": 10,
-		"marca": "NOMBRE",
+		"marca": "POLERA",
 		"imagen": "./img/mujer.img/img.polera1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": ["Color Blanco ", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 11,
-		"marca": "NOMBRE",
+		"marca": "BLAZER",
 		"imagen": "./img/mujer.img/img.polera2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "130",
+		"detalles": ["Color Negro", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 12,
-		"marca": "NOMBRE",
+		"marca": "OVERSIZE",
 		"imagen": "./img/mujer.img/img.polera3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "180",
+		"detalles": ["Color Morado ", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 13,
-		"marca": "NOMBRE",
+		"marca": "PANTALON RECTO",
 		"imagen": "./img/mujer.img/carritomujer/pantalon1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": [" Color celeste", " Modelo Juvenil", "Temporada 2022 "]
 	},
 	{
 		"id": 14,
-		"marca": "NOMBRE",
+		"marca": "PANTALON ACAMPADO",
 		"imagen": "./img/mujer.img/carritomujer/pantalon2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "140",
+		"detalles": [" Color Blanco", " Modelo Juvenil", "Temporada 2022 "]
 	},
 	{
 		"id": 15,
-		"marca": "prueba",
+		"marca": "PANTALON JOGGER",
 		"imagen": "./img/mujer.img/carritomujer/pantalon3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "160",
+		"detalles": [" Color Rojo", " Modelo Juvenil", "Temporada 2022 "]
 	},
 	{
 		"id": 16,
-		"marca": "NOMBRE",
+		"marca": "TACON ALTO",
 		"imagen": "./img/mujer.img/img.tacon1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "230",
+		"detalles": ["Color Crema ", " Modelo Formal", "Temporada 2022 "]
 	},
 	{
 		"id": 17,
-		"marca": "NOMBRE",
+		"marca": "TACON BAJO ",
 		"imagen": "./img/mujer.img/img.tacon2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "140",
+		"detalles": [" Color Blanco", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 18,
-		"marca": "prueba",
+		"marca": "TACON AGUJA",
 		"imagen": "./img/mujer.img/img.tacon3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "190",
+		"detalles": [" Color Mostaza", " Modelo Juvenil", " Temporada 2022"]
 	}
 
 
