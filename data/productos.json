@@ -421,14 +421,14 @@
 	},
 	{
 		"id": 59,
-		"marca": "Velez ",
+		"marca": "Veléz ",
 		"imagen": "./img/accesorios.img/bolso-2.jpg",
 		"precio": "250",
 		"detalles": ["Bolso Maletin de Cuero para Negocios", "Unisex Vintage con Correa Negra  ", "Dos compartimientos interiores con forro de algodon con cremallera "]
 	},
 	{
 		"id": 60,
-		"marca": "Velez ",
+		"marca": "Veléz ",
 		"imagen": "./img/accesorios.img/cartera-1.jpg",
 		"precio": "25",
 		"detalles": [" Billetara Corta Negro ", " Plegada para Mujer ", "Estilo Sencila Europeo "]
@@ -442,81 +442,81 @@
 	},
 	{
 		"id": 62,
-		"marca": "NOMBRE",
+		"marca": "New era",
 		"imagen": "./img/accesorios.img/gorro-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "40",
+		"detalles": ["Gorra Trucker Azul  ", "Accesorios personalizados", " Broche ajustable con parte posterior de Malla "]
 	},
 	{
 		"id": 63,
-		"marca": "NOMBRE",
+		"marca": "RVCA",
 		"imagen": "./img/accesorios.img/gorro-3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "80",
+		"detalles": [" Gorra RVCA color Charcoal/Gris", " Estampado Jaspeado", " 100% poliéster "]
 	},
 	{
 		"id": 64,
-		"marca": "niños",
+		"marca": "Veléz ",
 		"imagen": "img/accesorios.img/arete-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "40",
+		"detalles": ["Aretes Aestethick Estilo Mosqueton  ", " 2 piezas bañado en plata  ", "Pendiente de Moda para Mujeres y Niñas "]
 	},
 	{
 		"id": 65,
-		"marca": "NOMBRE",
+		"marca": "Camile Bijoux",
 		"imagen": "./img/accesorios.img/collar-1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "130",
+		"detalles": ["Collar corto de Monedas ", " Multiples capas de perlas", " Cadena Clavicula"]
 	},
 	{
 		"id": 66,
-		"marca": "NOMBRE",
+		"marca": "Iris Marzue",
 		"imagen": "./img/accesorios.img/collar-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "170",
+		"detalles": [" Empaque Especial Marzue", " Cierre Ajustable de 40cm a 45cm", "Con Piedra Circonita Bañado en Oro "]
 	},
 	{
 		"id": 67,
-		"marca": "NOMBRE",
+		"marca": "Camile Bijoux",
 		"imagen": "./img/accesorios.img/pulsera-1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "20",
+		"detalles": [" Pulsera de Cristal de Cuarzo Natural", "Cierre de Langosta Ajustable de 40 a 45cm ", " Unisex"]
 	},
 	{
 		"id": 68,
-		"marca": "NOMBRE",
+		"marca": "Camile Bijoux",
 		"imagen": "./img/accesorios.img/pulsera-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "40",
+		"detalles": [" Pulsera de Piedra Ónix y Hematita", "Balon de Acero bañado en Plata ", "Estilo Fútbol "]
 	},
 	{
 		"id": 69,
-		"marca": "prueba",
+		"marca": "Iris Marzue",
 		"imagen": "./img/accesorios.img/pulsera-3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": ["Pulsera Bañado en Oro ", " Cierre Ajustable de 40 a 45cm", "  Estilo Floral Bañado en Plata"]
 	},
 
 	{
 		"id": 70,
-		"marca": "NOMBRE",
+		"marca": "Esquire",
 		"imagen": "./img/accesorios.img/reloj-1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "450",
+		"detalles": ["Reloj Fossil Autocross", "  Correa de Cuero con Hebilla Simple ", "  Resistente al agua"]
 	},
 	{
 		"id": 71,
-		"marca": "NOMBRE",
+		"marca": "Esquire",
 		"imagen": "./img/accesorios.img/reloj-2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "280",
+		"detalles": ["  Resistente al agua", "Correa Poliuretano Multicolor  ", "Dial Blanco "]
 	},
 	{
 		"id": 72 ,
-		"marca": "prueba",
+		"marca": "Esquire",
 		"imagen": "./img/accesorios.img/reloj-3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "180",
+		"detalles": ["Apple Watch Series 4  ", " Black Aluminum ", " Llamadas, Reproduccion de audio, Bluetooth y más "]
 
 	}
 
