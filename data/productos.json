@@ -1,35 +1,35 @@
 [
 	{
 		"id": 1,
-		"marca": "conjunto",
+		"marca": "CONJUNTO",
 		"imagen": "./img/mujer.img/carritomujer/conjunto1.jpg",
 		"precio": "150",
-		"detalles": ["tela ", "modelo ", "temporada primavera "]
+		"detalles": ["Color Negro", "Modelo", "Temporada 2022"]
 	},
 	{
 		"id": 2,
-		"marca": "NOMBRE",
+		"marca": "EL MONO CON PAJARITO",
 		"imagen": "./img/mujer.img/carritomujer/conjunto2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "160",
+		"detalles": ["Color Beige ", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 3,
-		"marca": "NOMBRE",
+		"marca": "TERNO",
 		"imagen": "./img/mujer.img/carritomujer/conjunto3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "180",
+		"detalles": [" Color Negro Asabache", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 4,
-		"marca": "NOMBRE",
+		"marca": "VESTIDO ABLUSADO",
 		"imagen": "./img/mujer.img/carritomujer/vestido1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "200",
+		"detalles": [" Color Azul", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 5,
-		"marca": "NOMBRE",
+		"marca": "VESTIDO ",
 		"imagen": "./img/mujer.img/carritomujer/vestido2.jpg",
 		"precio": "PRECIO",
 		"detalles": [" ", " ", " "]
