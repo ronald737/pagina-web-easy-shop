@@ -124,6 +124,138 @@
 		"imagen": "./img/mujer.img/img.tacon3.jpg",
 		"precio": "190",
 		"detalles": [" Color Mostaza", " Modelo Juvenil", " Temporada 2022"]
+
+		
+	},
+
+
+
+	{
+		"id": 19,
+		"marca": "HOMBRE ",
+		"imagen": "./img/hombre.img/chompa1.jpg",
+		"precio": "150",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 20,
+		"marca": " ",
+		"imagen": "./img/hombre.img/chompa4.jpg",
+		"precio": "160",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 21,
+		"marca": " ",
+		"imagen": "./img/hombre.img/chompa3.jpg",
+		"precio": "180",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 22,
+		"marca": "VESTIDO ABLUSADO",
+		"imagen": "./img/hombre.img/pantalon1.jpg",
+		"precio": "200",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 23,
+		"marca": "VESTIDO ",
+		"imagen": "./img/hombre.img/pantalon2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 24,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/pantalon3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 25,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/camisa1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 26,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/camisa2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 27,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/camisa3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 28,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/polo1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 29,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/polo2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 30,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/polo3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 31,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/polera1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 32,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/polera2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 33,
+		"marca": "prueba",
+		"imagen": "./img/hombre.img/polera3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 34,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/taba1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 35,
+		"marca": "NOMBRE",
+		"imagen": "./img/hombre.img/taba2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 36,
+		"marca": "prueba",
+		"imagen": "./img/hombre.img/taba3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+>>>>>>> 029dcca6cd0a11995b75f6570ef46216b4ab9a03
 	}
 
 
