@@ -263,129 +263,129 @@
 
 	{
 		"id": 37,
-		"marca": "niñas ",
+		"marca": "VESTIDO TUBO",
 		"imagen": "./img/niños.img/niñas/blusa/blusa1.jpg",
 		"precio": "150",
-		"detalles": [" ", " ", " "]
+		"detalles": [" Color Gris", " Modelo standar", "Temporada 2022 "]
 	},
 	{
 		"id": 38,
-		"marca": " ",
+		"marca": "VESTIDO CANESU ",
 		"imagen": "./img/niños.img/niñas/blusa/blusa2.jpg",
 		"precio": "160",
-		"detalles": [" ", " ", " "]
+		"detalles": [" Color Celeste", " Modelo Juvenil", " Temporada 2022"]
 	},
 	{
 		"id": 39,
-		"marca": " ",
+		"marca": " VESTIDO ABLUSADO",
 		"imagen": "./img/niños.img/niñas/blusa/blusa3.jpg",
 		"precio": "180",
-		"detalles": [" ", " ", " "]
+		"detalles": ["Color Negro", " Modelo standar", " Temporada 2022"]
 	},
 	{
 		"id": 40,
-		"marca": "pantalon",
+		"marca": "PANTALON RECTO",
 		"imagen": "./img/niños.img/niñas/jean/pan1.jpg",
 		"precio": "200",
-		"detalles": [" ", " ", " "]
+		"detalles": [" Color Rojo", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 41,
-		"marca": "VESTIDO ",
+		"marca": "PANTALON FLOREADO ",
 		"imagen": "./img/niños.img/niñas/jean/pan2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "140",
+		"detalles": [" Color Flores", " Modelo Formal", "Temporada 2022 "]
 	},
 	{
 		"id": 42,
-		"marca": "NOMBRE",
+		"marca": "PANTALON PALAZZO",
 		"imagen": "./img/niños.img/niñas/jean/pan3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "280",
+		"detalles": [" Color Blanco", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 43,
-		"marca": "NOMBRE",
+		"marca": "TACONES LISOS",
 		"imagen": "./img/niños.img/niñas/tacos/taco1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": [" Color Palo Rosa", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 44,
-		"marca": "NOMBRE",
+		"marca": "TACONES BROGUE",
 		"imagen": "./img/niños.img/niñas/tacos/taco2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "120",
+		"detalles": [" Color Blanco", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 45,
-		"marca": "NOMBRE",
+		"marca": "TACONES MONK",
 		"imagen": "./img/niños.img/niñas/tacos/taco3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "170",
+		"detalles": [" Color Negro", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 46,
-		"marca": "niños",
+		"marca": "PANTALON RECTO",
 		"imagen": "./img/niños.img/niños/pantalon/pantalon1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "150",
+		"detalles": ["Color Beige ", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 47,
-		"marca": "NOMBRE",
+		"marca": "PANTALON JOGGER",
 		"imagen": "./img/niños.img/niños/pantalon/pantalon2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "170",
+		"detalles": [" Color Plomo", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 48,
-		"marca": "NOMBRE",
+		"marca": "PANTALON JEANS",
 		"imagen": "./img/niños.img/niños/pantalon/pantalon3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "190",
+		"detalles": [" Color Azul", " Modelo Formal", " Temporada 2022"]
 	},
 	{
 		"id": 49,
-		"marca": "NOMBRE",
+		"marca": "POLO MANGA CORTA",
 		"imagen": "./img/niños.img/niños/polo/polo1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "50",
+		"detalles": [" Color Azul", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 50,
-		"marca": "NOMBRE",
+		"marca": "POLO MANGA LARGA",
 		"imagen": "./img/niños.img/niños/polo/polo2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "70",
+		"detalles": [" Color Rojo", " Modelo Casual", " Temporada 2022"]
 	},
 	{
 		"id": 51,
-		"marca": "prueba",
+		"marca": "POLO DEPORTIVO",
 		"imagen": "./img/niños.img/niños/polo/polo3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "90",
+		"detalles": [" Color Gris", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 52,
-		"marca": "NOMBRE",
+		"marca": " ZAPATILLA NAUTICO",
 		"imagen": "./img/niños.img/niños/zapato/zapato1.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "160",
+		"detalles": ["Color Negro", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 53,
-		"marca": "NOMBRE",
+		"marca": " ZAPATILLA DERBI",
 		"imagen": "./img/niños.img/niños/zapato/zapato2.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "150",
+		"detalles": [" Color Rojo", " Modelo Casual", "Temporada 2022 "]
 	},
 	{
 		"id": 54,
-		"marca": "prueba",
+		"marca": " ZAPATILLA TENIS",
 		"imagen": "./img/niños.img/niños/zapato/zapato3.jpg",
-		"precio": "PRECIO",
-		"detalles": [" ", " ", " "]
+		"precio": "200",
+		"detalles": [" Color Rojo", " Modelo Juvenil", " Temporada 2022"]
 
 	},
 
