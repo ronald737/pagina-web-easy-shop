@@ -65,22 +65,66 @@
 	{
 		"id": 10,
 		"marca": "NOMBRE",
-		"imagen": "./img/mujer.img/carritomujer/blusa1.jpg",
+		"imagen": "./img/mujer.img/img.polera1.jpg",
 		"precio": "PRECIO",
 		"detalles": [" ", " ", " "]
 	},
 	{
 		"id": 11,
 		"marca": "NOMBRE",
-		"imagen": "./img/mujer.img/carritomujer/blusa2.jpg",
+		"imagen": "./img/mujer.img/img.polera2.jpg",
 		"precio": "PRECIO",
 		"detalles": [" ", " ", " "]
 	},
 	{
 		"id": 12,
 		"marca": "NOMBRE",
-		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
+		"imagen": "./img/mujer.img/img.polera3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 13,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/pantalon1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 14,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/carritomujer/pantalon2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 15,
+		"marca": "prueba",
+		"imagen": "./img/mujer.img/carritomujer/pantalon3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 16,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/img.tacon1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 17,
+		"marca": "NOMBRE",
+		"imagen": "./img/mujer.img/img.tacon2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 18,
+		"marca": "prueba",
+		"imagen": "./img/mujer.img/img.tacon3.jpg",
 		"precio": "PRECIO",
 		"detalles": [" ", " ", " "]
 	}
+
+
 ]
