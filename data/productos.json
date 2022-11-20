@@ -387,7 +387,139 @@
 		"precio": "PRECIO",
 		"detalles": [" ", " ", " "]
 
+	},
+
+
+
+	{
+		"id": 55,
+		"marca": "accesorios ",
+		"imagen": "./img/accesorios.img/Gafas-1.jpg",
+		"precio": "150",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 56,
+		"marca": " ",
+		"imagen": "./img/accesorios.img/Gafas-2.jpg",
+		"precio": "160",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 57,
+		"marca": " ",
+		"imagen": "./img/accesorios.img/Gafas-3.jpg",
+		"precio": "180",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 58,
+		"marca": "pantalon",
+		"imagen": "./img/accesorios.img/bolso-1.jpg",
+		"precio": "200",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 59,
+		"marca": "VESTIDO ",
+		"imagen": "./img/accesorios.img/bolso-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 60,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/cartera-1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 61,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/gorra-1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 62,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/gorro-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 63,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/gorro-3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 64,
+		"marca": "niños",
+		"imagen": "img/accesorios.img/arete-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 65,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/collar-1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 66,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/collar-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 67,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/pulsera-1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 68,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/pulsera-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 69,
+		"marca": "prueba",
+		"imagen": "./img/accesorios.img/pulsera-3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+
+	{
+		"id": 70,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/reloj-1.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 71,
+		"marca": "NOMBRE",
+		"imagen": "./img/accesorios.img/reloj-2.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+	},
+	{
+		"id": 72 ,
+		"marca": "prueba",
+		"imagen": "./img/accesorios.img/reloj-3.jpg",
+		"precio": "PRECIO",
+		"detalles": [" ", " ", " "]
+
 	}
+
 
 
 ]
