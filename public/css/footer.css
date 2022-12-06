@@ -59,6 +59,10 @@
     font-weight: 100;
     margin-left: 50px;
 }
+h1{
+  font-family: 'open sans';
+  font-weight: 700;
+}
 
 .menu{
     display: flex;
@@ -134,22 +138,19 @@
     justify-content: space-between;
     padding: 15px;
   }
-  
-  .menu li a:hover{
+.menu li a:hover{
     padding: 5px 15px;
     background-color: white;
     color: black;
     border-radius: 15px;
     text-decoration: none;
     transition: all 0.5s ease;
-
 }
-.nav li a{
-    color: white;
+.menu li a{
     text-decoration: none;
-    font-weight: bold;
-    /* transition: all 0.5s ease; */
+    color: white;
     font-family: 'open sans';
+    font-weight: bold;
 }
 .logo{
     font-size: 40px;
