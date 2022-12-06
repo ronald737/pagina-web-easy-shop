@@ -1,0 +1,9 @@
+{
+  "projects": {
+<<<<<<< HEAD
+    "default": "easy-shop-d4503"
+=======
+    "default": "easyshop-6fb0d"
+>>>>>>> 64bd4e533909f90fb827d38c3395e9e12c9f608d
+  }
+}
