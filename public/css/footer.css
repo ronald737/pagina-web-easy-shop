@@ -59,6 +59,10 @@
     font-weight: 100;
     margin-left: 50px;
 }
+h1{
+  font-family: 'open sans';
+  font-weight: 700;
+}
 
 .menu{
     display: flex;
@@ -124,19 +128,30 @@
     font-weight: bold;
     
   }
-  .menu li a:hover{
+
+  nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+
+.menu li a:hover{
     padding: 5px 15px;
     background-color: white;
     color: black;
     border-radius: 15px;
     text-decoration: none;
-}
-.nav li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
     transition: all 0.5s ease;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
     font-family: 'open sans';
+    font-weight: bold;
 }
 .logo{
     font-size: 40px;
