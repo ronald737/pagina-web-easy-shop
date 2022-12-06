@@ -1,0 +1,525 @@
+[
+	{
+		"id": 1,
+		"marca": "CONJUNTO",
+		"imagen": "./img/mujer.img/carritomujer/conjunto1.jpg",
+		"precio": "150",
+		"detalles": ["Color Negro", "Modelo", "Temporada 2022"]
+	},
+	{
+		"id": 2,
+		"marca": "EL MONO CON PAJARITO",
+		"imagen": "./img/mujer.img/carritomujer/conjunto2.jpg",
+		"precio": "160",
+		"detalles": ["Color Beige ", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 3,
+		"marca": "TERNO",
+		"imagen": "./img/mujer.img/carritomujer/conjunto3.jpg",
+		"precio": "180",
+		"detalles": [" Color Negro Asabache", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 4,
+		"marca": "VESTIDO ABLUSADO",
+		"imagen": "./img/mujer.img/carritomujer/vestido1.jpg",
+		"precio": "200",
+		"detalles": [" Color Azul", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 5,
+		"marca": "VESTIDO TUBO",
+		"imagen": "./img/mujer.img/carritomujer/vestido2.jpg",
+		"precio": "120",
+		"detalles": ["Color Gris ", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 6,
+		"marca": "VESTIDO DE NOVIA",
+		"imagen": "./img/mujer.img/carritomujer/vestido5.jpg",
+		"precio": "250",
+		"detalles": [" Color Blanco", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 7,
+		"marca": "CHOMPA AMERICANA",
+		"imagen": "./img/mujer.img/carritomujer/blusa1.jpg",
+		"precio": "190",
+		"detalles": [" Color Beige", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 8,
+		"marca": "CHOMPA BOMBER",
+		"imagen": "./img/mujer.img/carritomujer/blusa2.jpg",
+		"precio": "110",
+		"detalles": [" Color Turquesa", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 9,
+		"marca": " CUELLO TORTUGA",
+		"imagen": "./img/mujer.img/carritomujer/blusa3.jpg",
+		"precio": "170",
+		"detalles": [" Color Beige", " Modelo Formal", "Temporada 2022 "]
+	},
+	{
+		"id": 10,
+		"marca": "POLERA",
+		"imagen": "./img/mujer.img/img.polera1.jpg",
+		"precio": "90",
+		"detalles": ["Color Blanco ", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 11,
+		"marca": "BLAZER",
+		"imagen": "./img/mujer.img/img.polera2.jpg",
+		"precio": "130",
+		"detalles": ["Color Negro", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 12,
+		"marca": "OVERSIZE",
+		"imagen": "./img/mujer.img/img.polera3.jpg",
+		"precio": "180",
+		"detalles": ["Color Morado ", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 13,
+		"marca": "PANTALON RECTO",
+		"imagen": "./img/mujer.img/carritomujer/pantalon1.jpg",
+		"precio": "90",
+		"detalles": [" Color celeste", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 14,
+		"marca": "PANTALON ACAMPADO",
+		"imagen": "./img/mujer.img/carritomujer/pantalon2.jpg",
+		"precio": "140",
+		"detalles": [" Color Blanco", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 15,
+		"marca": "PANTALON JOGGER",
+		"imagen": "./img/mujer.img/carritomujer/pantalon3.jpg",
+		"precio": "160",
+		"detalles": [" Color Rojo", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 16,
+		"marca": "TACON ALTO",
+		"imagen": "./img/mujer.img/img.tacon1.jpg",
+		"precio": "230",
+		"detalles": ["Color Crema ", " Modelo Formal", "Temporada 2022 "]
+	},
+	{
+		"id": 17,
+		"marca": "TACON BAJO ",
+		"imagen": "./img/mujer.img/img.tacon2.jpg",
+		"precio": "140",
+		"detalles": [" Color Blanco", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 18,
+		"marca": "TACON AGUJA",
+		"imagen": "./img/mujer.img/img.tacon3.jpg",
+		"precio": "190",
+		"detalles": [" Color Mostaza", " Modelo Juvenil", " Temporada 2022"]
+
+		
+	},
+
+
+
+	{
+		"id": 19,
+		"marca": "CHOMPA CRUZADA",
+		"imagen": "./img/hombre.img/chompa1.jpg",
+		"precio": "150",
+		"detalles": [" Color Marron", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 20,
+		"marca": "CHOMPA BIKER ",
+		"imagen": "./img/hombre.img/chompa4.jpg",
+		"precio": "160",
+		"detalles": [" Color Mostaza", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 21,
+		"marca": " CHOMPA AMAERICANA",
+		"imagen": "./img/hombre.img/chompa3.jpg",
+		"precio": "180",
+		"detalles": [" Color Negro", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 22,
+		"marca": "PANTALON RECTO",
+		"imagen": "./img/hombre.img/pantalon1.jpg",
+		"precio": "200",
+		"detalles": [" Color Azul", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 23,
+		"marca": "PANTALON DRILL ",
+		"imagen": "./img/hombre.img/pantalon2.jpg",
+		"precio": "180",
+		"detalles": [" Color Negro", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 24,
+		"marca": "PANTALON JEANS",
+		"imagen": "./img/hombre.img/pantalon3.jpg",
+		"precio": "140",
+		"detalles": ["Color Azul Claro ", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 25,
+		"marca": "CAMISA INGLES",
+		"imagen": "./img/hombre.img/camisa1.jpg",
+		"precio": "190",
+		"detalles": [" Color Azul", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 26,
+		"marca": "CAMISA ITALIANA",
+		"imagen": "./img/hombre.img/camisa2.jpg",
+		"precio": "150",
+		"detalles": ["Color Arcoires ", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 27,
+		"marca": "CAMISA AMAERICANA",
+		"imagen": "./img/hombre.img/camisa3.jpg",
+		"precio": "170",
+		"detalles": [" Color Negro", " Modelo Formal", "Temporada 2022 "]
+	},
+	{
+		"id": 28,
+		"marca": "POLO MANGA CORTA",
+		"imagen": "./img/hombre.img/polo1.jpg",
+		"precio": "75",
+		"detalles": [" Color Gris", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 29,
+		"marca": "POLO CAMISERO",
+		"imagen": "./img/hombre.img/polo2.jpg",
+		"precio": "90",
+		"detalles": [" Color Amarillo", " Modelo Juvenil", "Temporada 2022 "]
+	},
+	{
+		"id": 30,
+		"marca": "POLO PIQUE",
+		"imagen": "./img/hombre.img/polo3.jpg",
+		"precio": "110",
+		"detalles": [" Color Negro", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 31,
+		"marca": "POLERA PLUMA",
+		"imagen": "./img/hombre.img/polera1.jpg",
+		"precio": "190",
+		"detalles": [" Color Tri", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 32,
+		"marca": "POLERA OVERSIZE",
+		"imagen": "./img/hombre.img/polera2.jpg",
+		"precio": "200",
+		"detalles": [" Color Tri", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 33,
+		"marca": "POLERA STARTER",
+		"imagen": "./img/hombre.img/polera3.jpg",
+		"precio": "280",
+		"detalles": [" Color Bi", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 34,
+		"marca": "BOTINES",
+		"imagen": "./img/hombre.img/taba1.jpg",
+		"precio": "150",
+		"detalles": [" Color Negro", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 35,
+		"marca": "DERBI",
+		"imagen": "./img/hombre.img/taba2.jpg",
+		"precio": "180",
+		"detalles": [" Color Negro", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 36,
+		"marca": "BROGUE",
+		"imagen": "./img/hombre.img/taba3.jpg",
+		"precio": "220",
+		"detalles": [" Color Verdeso", " Modelo Formal", " Temporada 2022"]
+
+	},
+
+
+
+
+	{
+		"id": 37,
+		"marca": "VESTIDO TUBO",
+		"imagen": "./img/niños.img/niñas/blusa/blusa1.jpg",
+		"precio": "150",
+		"detalles": [" Color Gris", " Modelo standar", "Temporada 2022 "]
+	},
+	{
+		"id": 38,
+		"marca": "VESTIDO CANESU ",
+		"imagen": "./img/niños.img/niñas/blusa/blusa2.jpg",
+		"precio": "160",
+		"detalles": [" Color Celeste", " Modelo Juvenil", " Temporada 2022"]
+	},
+	{
+		"id": 39,
+		"marca": " VESTIDO ABLUSADO",
+		"imagen": "./img/niños.img/niñas/blusa/blusa3.jpg",
+		"precio": "180",
+		"detalles": ["Color Negro", " Modelo standar", " Temporada 2022"]
+	},
+	{
+		"id": 40,
+		"marca": "PANTALON RECTO",
+		"imagen": "./img/niños.img/niñas/jean/pan1.jpg",
+		"precio": "200",
+		"detalles": [" Color Rojo", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 41,
+		"marca": "PANTALON FLOREADO ",
+		"imagen": "./img/niños.img/niñas/jean/pan2.jpg",
+		"precio": "140",
+		"detalles": [" Color Flores", " Modelo Formal", "Temporada 2022 "]
+	},
+	{
+		"id": 42,
+		"marca": "PANTALON PALAZZO",
+		"imagen": "./img/niños.img/niñas/jean/pan3.jpg",
+		"precio": "280",
+		"detalles": [" Color Blanco", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 43,
+		"marca": "TACONES LISOS",
+		"imagen": "./img/niños.img/niñas/tacos/taco1.jpg",
+		"precio": "90",
+		"detalles": [" Color Palo Rosa", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 44,
+		"marca": "TACONES BROGUE",
+		"imagen": "./img/niños.img/niñas/tacos/taco2.jpg",
+		"precio": "120",
+		"detalles": [" Color Blanco", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 45,
+		"marca": "TACONES MONK",
+		"imagen": "./img/niños.img/niñas/tacos/taco3.jpg",
+		"precio": "170",
+		"detalles": [" Color Negro", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 46,
+		"marca": "PANTALON RECTO",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon1.jpg",
+		"precio": "150",
+		"detalles": ["Color Beige ", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 47,
+		"marca": "PANTALON JOGGER",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon2.jpg",
+		"precio": "170",
+		"detalles": [" Color Plomo", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 48,
+		"marca": "PANTALON JEANS",
+		"imagen": "./img/niños.img/niños/pantalon/pantalon3.jpg",
+		"precio": "190",
+		"detalles": [" Color Azul", " Modelo Formal", " Temporada 2022"]
+	},
+	{
+		"id": 49,
+		"marca": "POLO MANGA CORTA",
+		"imagen": "./img/niños.img/niños/polo/polo1.jpg",
+		"precio": "50",
+		"detalles": [" Color Azul", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 50,
+		"marca": "POLO MANGA LARGA",
+		"imagen": "./img/niños.img/niños/polo/polo2.jpg",
+		"precio": "70",
+		"detalles": [" Color Rojo", " Modelo Casual", " Temporada 2022"]
+	},
+	{
+		"id": 51,
+		"marca": "POLO DEPORTIVO",
+		"imagen": "./img/niños.img/niños/polo/polo3.jpg",
+		"precio": "90",
+		"detalles": [" Color Gris", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 52,
+		"marca": " ZAPATILLA NAUTICO",
+		"imagen": "./img/niños.img/niños/zapato/zapato1.jpg",
+		"precio": "160",
+		"detalles": ["Color Negro", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 53,
+		"marca": " ZAPATILLA DERBI",
+		"imagen": "./img/niños.img/niños/zapato/zapato2.jpg",
+		"precio": "150",
+		"detalles": [" Color Rojo", " Modelo Casual", "Temporada 2022 "]
+	},
+	{
+		"id": 54,
+		"marca": " ZAPATILLA TENIS",
+		"imagen": "./img/niños.img/niños/zapato/zapato3.jpg",
+		"precio": "200",
+		"detalles": [" Color Rojo", " Modelo Juvenil", " Temporada 2022"]
+
+	},
+
+
+
+	{
+		"id": 55,
+		"marca": "Ray Ban",
+		"imagen": "./img/accesorios.img/Gafas-1.jpg",
+		"precio": "90",
+		"detalles": ["lentes de sol", "Clasico Redondo 50mm", "RB3447 001 "]
+	},
+	{
+		"id": 56,
+		"marca": " JackJad",
+		"imagen": "./img/accesorios.img/Gafas-2.jpg",
+		"precio": "35",
+		"detalles": ["Gafas de Sol Redondas de Metal ", " Lentes de Cristal Óptico de Calidad  ", "  Diseño Clásico de Marca Retro "]
+	},
+	{
+		"id": 57,
+		"marca": "Ray Ban ",
+		"imagen": "./img/accesorios.img/Gafas-3.jpg",
+		"precio": "60",
+		"detalles": [" Gafas Pro Acme", "Lentes Transparentes ", " Marco de Metal Redondo Pequeño Retro"]
+	},
+	{
+		"id": 58,
+		"marca": "Victoria Secret",
+		"imagen": "./img/accesorios.img/bolso-1.jpg",
+		"precio": "150",
+		"detalles": ["Cierre Magnético  ", "Bolso Morado KLEHOPE 10 piezas  ", "Botones Magnéticos "]
+	},
+	{
+		"id": 59,
+		"marca": "Veléz ",
+		"imagen": "./img/accesorios.img/bolso-2.jpg",
+		"precio": "250",
+		"detalles": ["Bolso Maletin de Cuero para Negocios", "Unisex Vintage con Correa Negra  ", "Dos compartimientos interiores con forro de algodon con cremallera "]
+	},
+	{
+		"id": 60,
+		"marca": "Veléz ",
+		"imagen": "./img/accesorios.img/cartera-1.jpg",
+		"precio": "25",
+		"detalles": [" Billetara Corta Negro ", " Plegada para Mujer ", "Estilo Sencila Europeo "]
+	},
+	{
+		"id": 61,
+		"marca": "Now",
+		"imagen": "./img/accesorios.img/gorra-1.jpg",
+		"precio": "70",
+		"detalles": [" Gorra Floyd Vintage Gris", " Ajuste de Correa en la parte posterior", " Fabricado con algodón prelevado"]
+	},
+	{
+		"id": 62,
+		"marca": "New era",
+		"imagen": "./img/accesorios.img/gorro-2.jpg",
+		"precio": "40",
+		"detalles": ["Gorra Trucker Azul  ", "Accesorios personalizados", " Broche ajustable con parte posterior de Malla "]
+	},
+	{
+		"id": 63,
+		"marca": "RVCA",
+		"imagen": "./img/accesorios.img/gorro-3.jpg",
+		"precio": "80",
+		"detalles": [" Gorra RVCA color Charcoal/Gris", " Estampado Jaspeado", " 100% poliéster "]
+	},
+	{
+		"id": 64,
+		"marca": "Veléz ",
+		"imagen": "img/accesorios.img/arete-2.jpg",
+		"precio": "40",
+		"detalles": ["Aretes Aestethick Estilo Mosqueton  ", " 2 piezas bañado en plata  ", "Pendiente de Moda para Mujeres y Niñas "]
+	},
+	{
+		"id": 65,
+		"marca": "Camile Bijoux",
+		"imagen": "./img/accesorios.img/collar-1.jpg",
+		"precio": "130",
+		"detalles": ["Collar corto de Monedas ", " Multiples capas de perlas", " Cadena Clavicula"]
+	},
+	{
+		"id": 66,
+		"marca": "Iris Marzue",
+		"imagen": "./img/accesorios.img/collar-2.jpg",
+		"precio": "170",
+		"detalles": [" Empaque Especial Marzue", " Cierre Ajustable de 40cm a 45cm", "Con Piedra Circonita Bañado en Oro "]
+	},
+	{
+		"id": 67,
+		"marca": "Camile Bijoux",
+		"imagen": "./img/accesorios.img/pulsera-1.jpg",
+		"precio": "20",
+		"detalles": [" Pulsera de Cristal de Cuarzo Natural", "Cierre de Langosta Ajustable de 40 a 45cm ", " Unisex"]
+	},
+	{
+		"id": 68,
+		"marca": "Camile Bijoux",
+		"imagen": "./img/accesorios.img/pulsera-2.jpg",
+		"precio": "40",
+		"detalles": [" Pulsera de Piedra Ónix y Hematita", "Balon de Acero bañado en Plata ", "Estilo Fútbol "]
+	},
+	{
+		"id": 69,
+		"marca": "Iris Marzue",
+		"imagen": "./img/accesorios.img/pulsera-3.jpg",
+		"precio": "90",
+		"detalles": ["Pulsera Bañado en Oro ", " Cierre Ajustable de 40 a 45cm", "  Estilo Floral Bañado en Plata"]
+	},
+
+	{
+		"id": 70,
+		"marca": "Esquire",
+		"imagen": "./img/accesorios.img/reloj-1.jpg",
+		"precio": "450",
+		"detalles": ["Reloj Fossil Autocross", "  Correa de Cuero con Hebilla Simple ", "  Resistente al agua"]
+	},
+	{
+		"id": 71,
+		"marca": "Esquire",
+		"imagen": "./img/accesorios.img/reloj-2.jpg",
+		"precio": "280",
+		"detalles": ["  Resistente al agua", "Correa Poliuretano Multicolor  ", "Dial Blanco "]
+	},
+	{
+		"id": 72 ,
+		"marca": "Esquire",
+		"imagen": "./img/accesorios.img/reloj-3.jpg",
+		"precio": "180",
+		"detalles": ["Apple Watch Series 4  ", " Black Aluminum ", " Llamadas, Reproduccion de audio, Bluetooth y más "]
+
+	}
+
+
+
+]
