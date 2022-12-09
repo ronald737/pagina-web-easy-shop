@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css"
+        integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./nosotros.css">
 
-    <link rel="stylesheet" href="./estilos.css">
+    <!-- <link rel="stylesheet" href="./estilos.css"> -->
 </head>
 
 <body>
@@ -32,6 +35,8 @@
             <li><a href="webaccesorios.html">Accesorios</a></li>
             <li><a href="webnosotros.html">Nosotros</a></li>
             <li><a href="webpersonalizar.html">Personalizar</a></li>
+
+
         </ul>
     </nav>
     <div class="contenedor">
@@ -49,18 +54,19 @@
 
     </div>
 
-
-    <div class="container">
+    <div class="container1">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6">
-                <div class="img"><img src="./img/nosotros.img/nosotros (2).jpg" alt="" width="600px" height="900px">
+            <div class="col-md-6">
+                <div class="img">
+                    <img src="./img/nosotros.img/nosotros (2).jpg" alt="" width="600px" height="900px">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-md-6">
 
                 <br>
-                <p class="parrafo-1">Somos una marca peruana que está dispuesto a brindarte el mejor servicio de atención
-                                     
+                <p class="parrafo-1">Somos una marca peruana que está dispuesto a brindarte el mejor servicio de
+                    atención
+
                 </p>
 
                 <h4>Dirección</h4>
@@ -86,74 +92,110 @@
         </div>
     </div>
 
-    <div class="container-form">
+    <!--FORMULARIO   -->
+
+
+    <div class="container">
         <div class="row">
-            <h5>Llena tus datos y participa por una tarjeta de gift card</h5>
-            <div class="col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="col-md-12">
+                <div class="card-body">
+                    <h5>INGRESA TUS DATOS Y PARTICIPA PARA UNA GIFT CARD</h5>
+                    <form id="formulario">
+                        <div class="form-group">
+                            <input id="nombre" type="text" class="form-control" name="name"
+                                placeholder="Ingresa tu nombre" autofocus>
+                        </div>
 
-            <label>
-                <input type="text" name="nombre" placeholder="Nombre" required>
-            </label> 
+                        <div class="form-group">
+                            <input id="apellido" type="text" class="form-control" name="surname"
+                                placeholder="Ingresa tus apellidos" autofocus>
+                        </div>
 
-            <label>
-                <input type="text" name="apellidos" placeholder="Apellidos" required>
-            </label>
+                        <div class="form-group">
+                            <input id="direccion" type="email" class="form-control" name="correo"
+                                placeholder="Ingresa tu E-mail" autofocus>
+                        </div>
 
-            <label>
-                <input type="email" name="correo" placeholder="E-mail" required>
-            </label>
+                        <br>
 
-            <label>
-                <input type="tel" name="cel" placeholder="Número de celular" required>
-            </label>
-
-
-           <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese Comentario"></textarea>
-
-
-            |<input type="submit" value="Enviar" class="boton">
-        </div>
-    </div> 
-
-
-     <!-- ///////////////////// -->
-
-    <!-- <div class="contenedor_form">
-        <form>
-            <div class="row">
-                <div class="col-6 form1">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre" style="color: white;">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" style="color: white;">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Telefono" style="color: white;">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="¿Que servicio necesitas?" style="color: white;" >
-                    </div>
+                        <button id="btnSend">Enviar</button>
+                        <div id="container" class="" col-md-12>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="col-6 form2">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Escriba aqui un mensaje" style="color: white;"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" style="color: white;">Enviar</button>
-                    </div>
-                </div>
-
             </div>
-            
-        </form>
-    </div> -->
+        </div>
+    </div>
+
+    <!-- Parte firebase -->
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB-iPfsqdEffvXzlNtJ77N7Y0ZaUE7jPv4",
+            authDomain: "easyshop-database-20b23.firebaseapp.com",
+            projectId: "easyshop-database-20b23",
+            storageBucket: "easyshop-database-20b23.appspot.com",
+            messagingSenderId: "91765888158",
+            appId: "1:91765888158:web:dbed7553599c047d4b578f",
+            measurementId: "G-MF8PGLQGQW"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
 
 
-    <!-- /////////////////// -->
 
-</div>
+        var formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", async (eve) => {
+            eve.preventDefault();
+
+
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var direccion = document.getElementById("direccion").value;
+
+
+            try {
+                const docRef = await addDoc(collection(db, "registros"), {
+                    nombre: nombre,
+                    apellido: apellido,
+                    direccion: direccion
+
+                });
+
+                console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
+        })
+
+        window.addEventListener("DOMContentLoaded", async () => {
+            const querySnapshot = await getDocs(collection(db, "registros"));
+            querySnapshot.forEach((doc) => {
+                /*console.log(`${doc.id} => ${doc.data().nombre}`);
+                console.log(`${doc.id} => ${doc.data().apellido}`);
+                console.log(`${doc.id} => ${doc.data().direccion}`);*/
+
+
+                container.innerHTML = container.innerHTML +
+                    "<p style='text-align:center; margin-top:30px; font-weight:bold; color:black;'>Gracias por registrate " + doc.data().nombre + " !!!<p>"
+            });
+
+        })
+    </script>
+
+    </div>
     <div class="pie_pagina">
         <div class="redes_sociales">
             <a href="http:\\www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
@@ -161,12 +203,12 @@
             <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-       
-        
+
+
 
         <p class="pie_texto">
-            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
-            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop .
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable.
             Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
             moda a nivel mundial.
         </p>
@@ -192,7 +234,7 @@
                         <a href="#">Políticas de privacidad</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Productos</p>
                     <div>
@@ -226,6 +268,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
