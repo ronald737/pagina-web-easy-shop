@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 50, 75);
+}
+
+
+
+/*NAVEGADOR*/
+
+            /* M E N Ú */
+            .nav{
+                width: 100%;
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+            }
+            
+            .logo{
+                font-size: 40px;
+                font-family: 'open sans';
+                color: white;
+                font-weight: 100;
+                margin-left: 50px;
+            }
+            
+            .menu{
+                display: flex;
+            }
+            
+            .menu li{
+               list-style: none; 
+               margin: 15px;
+            }
+            
+            .nav li a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                transition: all 0.5s ease;
+                font-family: 'open sans';
+            }
+            
+            .menu li a:hover{
+                padding: 5px 15px;
+                background-color: white;
+                color: black;
+                border-radius: 15px;
+            }
+            .contenedor{
+                display: flex;
+                width: 290px;
+                height: 30px;
+                font-size: 30px;
+                line-height: 40px;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                bottom: 0;
+                left: 400px;
+                overflow: hidden;
+                color: white;
+              }
+              .listado{
+                list-style: none;
+                padding-left: 10px;
+                animation: cambiar 8s infinite;
+                font-family: 'open sans';
+                font-size: x-large;
+              }
+              
+              @keyframes cambiar{
+                0%{margin-top: -10px;}
+                20%{margin-top: -10px;}
+                25%{margin-top: -50px;}
+                50%{margin-top: -50px;}
+                55%{margin-top: -90px;}
+                80%{margin-top: -90px;}
+                85%{margin-top: -50px;}
+                95%{margin-top: -50px;}
+                100%{margin-top: 0;}
+              }
+              .compra{
+                list-style: none;
+                padding-left: 10px;
+                animation: fluye 8s infinite;
+                font-family: 'open sans';
+                font-size: x-large;
+              }
+              @keyframes fluye{
+                0%{margin-top: -10px;}
+                20%{margin-top: -10px;}
+                25%{margin-top: -50px;}
+                50%{margin-top: -50px;}
+                55%{margin-top: -90px;}
+                80%{margin-top: -90px;}
+                85%{margin-top: -50px;}
+                95%{margin-top: -50px;}
+                100%{margin-top: 0;}
+            
+              }
+
+   /*FORMULARIO LOGIN*/
+   
+.LoginForm, .registroForm{
+    width: 320px;
+    height: 420px;
+    background:  #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+.LoginForm h1, .registroForm h1{
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'open sans';
+    font-weight: bold;
+    display: block;
+}
+
+.LoginForm input, .registroForm input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.LoginForm button, .registroForm button{
+    width: 100%;
+}
+
+.LoginForm input, .registroForm input[type="email"],
+.LoginForm input, .registroForm input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.LoginForm button, .registroForm button[type="submit"] {
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #000;
+    background: #fff ;
+    font-size: 18px;
+    border-radius: 40px;
+    font-family: 'open sans';
+}
+
+.LoginForm a{
+    text-decoration: none;
+    color: darkgrey;
+    font-family: 'open sans';
+    margin-left: 80px;
+}
+
+.LoginForm a:hover{
+    color: #fff;
+}
+
+ /* PIE DE PÁGINA */
+
+ .pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+          
+.pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+}
+          
+.pie_pagina .redes_sociales i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 25px;
+}
+          
+.pie_pagina .pie_texto{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+footer{
+    background-color:  rgb(184, 177, 177);
+}
+footer p.h5{
+    text-align: justify;  
+    padding-left: 30%;
+}
+          
+footer a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+    /* padding-bottom: 30px; */
+} 
+footer a:hover{
+    color: black;
+}
+
+        /* F O R M U L A R I O */
+
+.container{
+    border: 2px solid red;
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    border-radius: 15px;
+    background-image: url(/img/nosotros.img/navi1.jpg);
+    margin-top: 30px;
+    margin-bottom: 20px;
+ } 
+
+button{
+    max-width: 100%;  
+    border: 1px solid black;
+    color:white;
+    background-color: black;
+    border-radius:30px;
+    margin-left: 200px;
+    padding: 15px;
+}
+h5{
+    text-align: center;
+    color: rgb(150, 14, 14);
+    font-weight: bold;
+}
+
+/*FIN DE FORMULARIO*/
+
+
+footer{
+    padding-bottom: 30px;
+    background-color: rgb(184, 177, 177);
+  }
+
