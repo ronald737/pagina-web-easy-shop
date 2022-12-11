@@ -33,7 +33,7 @@
             <li><a href="webnosotros.html">Nosotros</a></li>
             <li><a href="webpersonalizar.html">Personalizar</a></li>
             <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-   
+
         </ul>
     </nav>
     <div class="contenedor">
@@ -52,21 +52,22 @@
     </div>
 
     <!--FORMULARIO LOGIN-->
-
-    <div class="LoginForm">
+    <h3 id="hello">Bienvenide</h3>
+    <div class="LoginForm" id="LoginForm">
         <h1>Login Here</h1>
-            <input id="emL" type="email" placeholder="Enter Email">
-            <br>
-            <input id="pwdL" type="password" placeholder="Enter Password">
-            <br>
-            <button type="submit" >Iniciar Sesión</button>
-            <br><br>
+        <input id="emL" type="email" placeholder="Enter Email">
+        <br>
+        <input id="pwdL" type="password" placeholder="Enter Password">
+        <br>
+        <button type="submit" id="btnLogin">Iniciar Sesión</button>
+        <br><br>
+    </div>
 
-            
-            <div class="LogoutSeccion">
-                <button type="submit" id="salir">Cerrar Sesión</button>
-                <br><br>
-            </div>
+
+    <div class="LogoutSeccion" id="LogoutSeccion">
+        <button type="submit" id="salir">Cerrar Sesión</button>
+        <br><br>
+    </div>
 
     <!--FORMULARIO REGISTRO-->
 
@@ -76,10 +77,110 @@
         <br>
         <input id="pwdR" type="password" placeholder="Ingresa tu contraseña">
         <br>
-        <button type="submit" id="btnRegistro">Registro</button>
+        <button type="submit" id="btnRegistro">Registrarme</button>
     </div>
 
-    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDXK8Bs2BCopYYb77Idmcgp41po1qr5XOE",
+            authDomain: "login-auth-es.firebaseapp.com",
+            projectId: "login-auth-es",
+            storageBucket: "login-auth-es.appspot.com",
+            messagingSenderId: "1013255037762",
+            appId: "1:1013255037762:web:7ef6338cdf00862e2f5edb",
+            measurementId: "G-JRM314JVDD"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+
+
+
+        document.getElementById("btnLogin").addEventListener("click", () => {
+            var email = document.getElementById("emL").value;
+            var password = document.getElementById("pwdL").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log("Mensaje de acierto" + user);
+
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+
+                    console.log("Mensaje de error" + errorMessage);
+                });
+        })
+
+        //CLIC EN REGISTRAR
+
+        document.getElementById("btnRegistro").addEventListener("click", () => {
+            var email = document.getElementById("usrR").value;
+            var password = document.getElementById("pwdR").value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log(user);
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    console.log("Mennsaje de error" + errorMessage);
+                });
+        })
+
+
+
+        //CLICK EN SALIR
+        document.getElementById("salir").addEventListener("click", () => {
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                console.log("Cerrar sesión");
+
+            }).catch((error) => {
+                // An error happened.
+                console.log("Mennsaje de error");
+                console.log(error);
+            });
+        })
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                const email = user.email;
+                document.getElementById("hello").innerHTML = document.getElementById("hello").innerHTML + ", " + email;
+                document.getElementById("btnLogin").style.display = "none";
+                document.getElementById("salir").style.display = "block";
+                // ...
+            } else {
+                // User is signed out
+                // ...
+                document.getElementById("hello").innerHTML = "Bienvenido";
+                document.getElementById("btnLogin").style.display = "block";
+                document.getElementById("salir").style.display = "none";
+            }
+        });
+    </script>
 
 
 
@@ -99,9 +200,9 @@
 
 
 
-    
 
-<BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR>
+
+    <BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR><BR></BR>
     <!--FOOTER-->
     <div class="pie_pagina">
         <div class="redes_sociales">
@@ -110,17 +211,17 @@
             <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-       
-        
-    
+
+
+
         <p class="pie_texto">
-            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
-            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop .
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable.
             Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
             moda a nivel mundial.
         </p>
     </div>
-    
+
     </div>
     <footer>
         <br></br>
@@ -141,7 +242,7 @@
                         <a href="#">Políticas de privacidad</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Productos</p>
                     <div>

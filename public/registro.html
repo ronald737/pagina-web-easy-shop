@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate • EasyShop</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css"
+        integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+    <!--NAVEGADOR-->
+
+    <nav class="nav">
+        <div class="logo">Easy Shop</div>
+        <ul class="menu">
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="webmujer.html">Mujeres</a></li>
+            <li><a href="webhombre.html">Hombres</a></li>
+            <li><a href="webniños.html">Niños</a></li>
+            <li><a href="webaccesorios.html">Accesorios</a></li>
+            <li><a href="webnosotros.html">Nosotros</a></li>
+            <li><a href="webpersonalizar.html">Personalizar</a></li>
+            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <ul class="compra">
+            <li>Compra</li>
+            <li>Compra</li>
+            <li>Compra</li>
+
+        </ul>
+        <ul class="listado">
+            <li>ahorrando</li>
+            <li>más</li>
+            <li>felíz</li>
+        </ul>
+
+    </div>
+
+    <!--FORMULARIO REGISTRO-->
+
+    <div class="registroForm">
+        <h1>Registrate Aquí!!!</h1>
+        <input id="usrR" type="email" placeholder="Ingresa tu correo">
+        <br>
+        <input id="pwdR" type="password" placeholder="Ingresa tu contraseña">
+        <br>
+        <button type="submit" id="btnRegistro">Registro</button>
+    </div>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDXK8Bs2BCopYYb77Idmcgp41po1qr5XOE",
+            authDomain: "login-auth-es.firebaseapp.com",
+            projectId: "login-auth-es",
+            storageBucket: "login-auth-es.appspot.com",
+            messagingSenderId: "1013255037762",
+            appId: "1:1013255037762:web:7ef6338cdf00862e2f5edb",
+            measurementId: "G-JRM314JVDD"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+
+
+
+        document.getElementById("btnLogin").addEventListener("click", () => {
+            var email = document.getElementById("emL").value;
+            var password = document.getElementById("pwdL").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log("Mensaje de acierto" + user);
+
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+
+                    console.log("Mensaje de error" + errorMessage);
+                });
+        })
+
+        //CLIC EN REGISTRAR
+
+        document.getElemntById("btnRegistro").addEventListener("click", () => {
+            var email = document.getElementById("usrR").value;
+            var password = document.getElementById("pwdR").value;
+
+
+            console.log("usrR:" + email);
+            console.log("pwdR:" + password);
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log("Mensaje de acierto" + user);
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    console.log("Mennsaje de error" + errorMessage);
+                });
+        })
+
+    </script>
+
+</body>
+
+</html>
