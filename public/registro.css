@@ -1,0 +1,54 @@
+.registroForm{
+    width: 320px;
+    height: 420px;
+    background:  #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+    margin-left: 350px;
+}
+
+.registroForm h1{
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'open sans';
+    font-weight: bold;
+    display: block;
+}
+
+.registroForm input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registroForm button{
+    width: 100%;
+}
+.registroForm input[type="email"],
+.registroForm input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.registroForm button[type="submit"] {
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #000;
+    background: #fff ;
+    font-size: 18px;
+    border-radius: 40px;
+    font-family: 'open sans';
+}

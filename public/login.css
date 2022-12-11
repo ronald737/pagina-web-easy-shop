@@ -104,21 +104,22 @@ body{
 
    /*FORMULARIO LOGIN*/
    
-.LoginForm, .registroForm{
+.LoginForm{
     width: 320px;
     height: 420px;
     background:  #000;
     color: #fff;
     top: 50%;
-    left: 50%;
+    left: 43%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius: 10px;
+    margin-right: 500px;
 }
 
-.LoginForm h1, .registroForm h1{
+.LoginForm h1{
     margin: 0;
     padding: 0 0 20px 0;
     text-align: center;
@@ -128,17 +129,17 @@ body{
     display: block;
 }
 
-.LoginForm input, .registroForm input{
+.LoginForm input{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.LoginForm button, .registroForm button{
+.LoginForm button{
     width: 100%;
 }
 
-.LoginForm input, .registroForm input[type="email"],
-.LoginForm input, .registroForm input[type="password"] {
+.LoginForm input, 
+.LoginForm input{
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -148,7 +149,7 @@ body{
     font-size: 16px;
 }
 
-.LoginForm button, .registroForm button[type="submit"] {
+.LoginForm button{
     border: none;
     outline: none;
     height: 50px;
@@ -169,6 +170,7 @@ body{
 .LoginForm a:hover{
     color: #fff;
 }
+
 
  /* PIE DE PÁGINA */
 
