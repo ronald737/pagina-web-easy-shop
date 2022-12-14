@@ -66,95 +66,28 @@ img{
     margin-left: 680px;
 }
 
-.nav{
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+/* NAVEGADOR */
+
+.navbar-brand,
+.nav-link {
+    font-family: 'open sans';
 }
 
-.logo{
+.navbar-brand {
     font-size: 40px;
     font-family: 'open sans';
-    color: white;
-    font-weight: 100;
     margin-left: 50px;
 }
 
-.menu{
-    display: flex;
+nav {
+    padding: 15px;
+    width: 100%;
 }
 
-.menu li{
-   list-style: none; 
-   margin: 15px;
+nav li a {
+    margin-right: 15px;
 }
 
-.nav li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.5s ease;
-    font-family: 'open sans';
-}
-
-.menu li a:hover{
-    padding: 5px 15px;
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-}
-.contenedor{
-    display: flex;
-    width: 290px;
-    height: 30px;
-    font-size: 30px;
-    line-height: 40px;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    bottom: 0;
-    left: 400px;
-    overflow: hidden;
-    color: white;
-    margin-top: 10px;
-  }
-.listado{
-    list-style: none;
-    padding-left: 10px;
-    animation: cambiar 8s infinite;
-  }
-  
-  @keyframes cambiar{
-    0%{margin-top: -10px;}
-    20%{margin-top: -10px;}
-    25%{margin-top: -50px;}
-    50%{margin-top: -50px;}
-    55%{margin-top: -90px;}
-    80%{margin-top: -90px;}
-    85%{margin-top: -50px;}
-    95%{margin-top: -50px;}
-    100%{margin-top: 0;}
-  }
-  .compra{
-    list-style: none;
-    padding-left: 10px;
-    animation: fluye 8s infinite;
-  }
-  @keyframes fluye{
-    0%{margin-top: -10px;}
-    20%{margin-top: -10px;}
-    25%{margin-top: -50px;}
-    50%{margin-top: -50px;}
-    55%{margin-top: -90px;}
-    80%{margin-top: -90px;}
-    85%{margin-top: -50px;}
-    95%{margin-top: -50px;}
-    100%{margin-top: 0;}
-
-  }
 .img {
     width: 600px;
     display: block;
@@ -170,53 +103,52 @@ img{
 
 /* PIE DE PÁGINA */
 
-.pie_pagina{
+/* PIE DE PÁGINA */
+
+.pie_pagina {
     padding: 20px 0px;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
 }
 
-.pie_pagina .redes_sociales{
+.pie_pagina .redes_sociales {
     text-align: center;
     padding-bottom: 10px;
 }
 
-.pie_pagina .redes_sociales i{
+.pie_pagina .redes_sociales i {
     color: white;
     font-size: 30px;
     padding: 0px 25px;
 }
 
-.pie_pagina, .pie_texto{
+.pie_pagina .pie_texto {
     text-align: center;
     font-size: 13px;
     color: white;
 }
 
-            /* slider */
-
-
-
-footer p.h5{
-    text-align: justify;
-    padding-left: 30%;  
+footer {
+    background-color: rgb(184, 177, 177);
+    padding-bottom: 25px;
 }
 
-footer a{
+footer p.h5 {
+    text-align: justify;
+    padding-left: 30%;
+}
+
+footer a {
     margin: auto;
     text-decoration: none;
     color: black;
     padding-left: 30%;
-} 
+}
 
-footer a:hover{
+footer a:hover {
     color: black;
 }
-footer{
-    padding-bottom: 30px;
-    background-color: rgb(184, 177, 177);
-  }
 
   .btn-wsp{
     position: fixed;

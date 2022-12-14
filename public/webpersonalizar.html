@@ -1,82 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalizar</title>
+    <title>Personalizar • EasyShop</title>
 
+    <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-
     <link rel="stylesheet" href="./css/fontawesome.css">
-
     <link rel="stylesheet" href="./personalizar.css">
+    <!-- TIPO DE LETRA -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- MAIN APP -->
+    <script src="./main.js" type="module"></script>
+
 </head>
+
 <body>
     <a href="https://whatsapp.com" class="btn-wsp" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
-     </a>
-      <a href="https://www.facebook.com" class="btn-face" target="_blank">
+    </a>
+    <a href="https://www.facebook.com" class="btn-face" target="_blank">
         <i class="fa-brands fa-facebook"></i>
-     </a> 
-    <nav class="nav">
-        <div class="logo">Easy Shop</div>
-        <ul class="menu">
-            <li><a href="compras.html">Compras</a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="webmujer.html">Mujeres</a></li>
-            <li><a href="webhombre.html">Hombres</a></li>
-            <li><a href="webniños.html">Niños</a></li>
-            <li><a href="webaccesorios.html">Accesorios</a></li>
-            <li><a href="webnosotros.html">Nosotros</a></li>
-            <li><a href="webpersonalizar.html">Personalizar</a></li>
-            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-        </ul> 
-    </nav>
-    <div class="contenedor">
-        <ul class="compra">
-            <li>Compra</li>
-            <li>Compra</li>
-            <li>Compra</li>
+    </a>
 
-        </ul>
-        <ul class="listado">
-            <li>ahorrando</li>
-            <li>más</li>
-            <li>felíz</li>
-        </ul>
+    <!-- NAVEGADOR -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">EasyShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="compras.html">Compras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webhombre.html">Hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webmujer.html">Mujer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webniños.html">Niños</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webaccesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webnosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webpersonalizar.html">Personalizar</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#entrarModal">
+                        <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link logged-out" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        <i class="fa-solid fa-user-plus"></i> Registrarme</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logged-in" id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ENTRAR MODAL -->
+
+    <div class="modal fade" id="entrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Iniciar Sesión</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="login-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="login-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary w-100 mb-4">Iniciar Sesión</button>
+                    </form>
+                    <button type="button" id="loginGoogle" class="btn btn-info" style="margin-left: 50px;">
+                        Login with Google
+                    </button>
+
+                    <button type="button" id="loginGithub" class="btn btn-warning" style="margin-left: 50px;">
+                        Login with GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REGISTRO MODAL -->
+
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Registrarme</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="registro-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="registro-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="registro-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary" style="margin-left: 170px;">Registrarme</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
 
     </div>
-<br> <br> <br>
+    <br> <br> <br>
     <h2>¡Elige tu propio diseño!</h2>
 
     <div class="container base1">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6">
-                <a href="texteo/prueba 5/camisas1/index.html"><img src="texteo/prueba 5/camisas1/images/basecamisa1.png" alt="" class="img-fluid"></a>
+                <a href="texteo/prueba 5/camisas1/index.html"><img src="texteo/prueba 5/camisas1/images/basecamisa1.png"
+                        alt="" class="img-fluid"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6">
-                <a href="texteo/prueba 5/camisas2/index.html"><img src="texteo/prueba 5/camisas2/images/base.png" alt="" class="img-fluid"></a>
+                <a href="texteo/prueba 5/camisas2/index.html"><img src="texteo/prueba 5/camisas2/images/base.png" alt=""
+                        class="img-fluid"></a>
             </div>
         </div>
-    </div>   
-    
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6">
-                <a href="texteo/prueba 5/pantalones1/index.html"><img src="texteo/prueba 5/pantalones1/images/base.png" alt="" class="img-fluid"></a>
+                <a href="texteo/prueba 5/pantalones1/index.html"><img src="texteo/prueba 5/pantalones1/images/base.png"
+                        alt="" class="img-fluid"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6">
-                <a href="texteo/prueba 5/pantalones2/index.html"><img src="texteo/prueba 5/pantalones2/images/base.png" alt="" class="img-fluid"></a>
+                <a href="texteo/prueba 5/pantalones2/index.html"><img src="texteo/prueba 5/pantalones2/images/base.png"
+                        alt="" class="img-fluid"></a>
             </div>
         </div>
-    </div>    
+    </div>
 
     <div class="pie_pagina">
         <div class="redes_sociales">
@@ -85,19 +186,19 @@
             <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-       
-        
+
+
 
         <p class="pie_texto">
-            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
-            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop .
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable.
             Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
             moda a nivel mundial.
         </p>
     </div>
 
     </div>
-    
+
     <footer>
         <br><br>
         <div class="container-fluid">
@@ -117,7 +218,7 @@
                         <a href="#">Políticas de privacidad</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Productos</p>
                     <div>
@@ -133,7 +234,7 @@
                         <a href="webaccesorios.html">Accesorios</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Legal</p>
                     <div>
@@ -149,11 +250,12 @@
                         <a href="#">Política de cookies</a>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </footer>
-<script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
+
 </html>

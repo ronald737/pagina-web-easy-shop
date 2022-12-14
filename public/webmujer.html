@@ -1,70 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa de mujer</title>
+    <title>Mujeres • EasyShop</title>
+
+
     <link rel="stylesheet" href="./mujer.css">
 
+    <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
-
-
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-
     <link rel="stylesheet" href="./css/fontawesome.css">
-
     <link rel="stylesheet" href="./mujer.css">
+    <!-- TIPO DE LETRA -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- MAIN APP -->
+    <script src="./main.js" type="module"></script>
 
 </head>
+
 <body>
-    
-    <nav class="nav">
-        <div class="logo">Easy Shop</div>
-        <ul class="menu">
-            <li><a href="compras.html">Compras</a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="webmujer.html">Mujeres</a></li>
-            <li><a href="webhombre.html">Hombres</a></li>
-            <li><a href="webniños.html">Niños</a></li>
-            <li><a href="webaccesorios.html">Accesorios</a></li>
-            <li><a href="webnosotros.html">Nosotros</a></li>
-            <li><a href="webpersonalizar.html">Personalizar</a></li>
-            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-         </ul>
+
+    <!-- NAVEGADOR -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">EasyShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="compras.html">Compras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webhombre.html">Hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webmujer.html">Mujer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webniños.html">Niños</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webaccesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webnosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webpersonalizar.html">Personalizar</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#entrarModal">
+                        <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link logged-out" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        <i class="fa-solid fa-user-plus"></i> Registrarme</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logged-in" id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="contenedor">
-        <ul class="compra">
-            <li>Compra</li>
-            <li>Compra</li>
-            <li>Compra</li>
+    <!-- ENTRAR MODAL -->
 
-        </ul>
-        <ul class="listado">
-            <li>ahorrando</li>
-            <li>más</li>
-            <li>felíz</li>
-        </ul>
+    <div class="modal fade" id="entrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Iniciar Sesión</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <form id="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="login-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="login-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary w-100 mb-4">Iniciar Sesión</button>
+                    </form>
+                    <button type="button" id="loginGoogle" class="btn btn-info" style="margin-left: 50px;">
+                        Login with Google
+                    </button>
+
+                    <button type="button" id="loginGithub" class="btn btn-warning" style="margin-left: 50px;">
+                        Login with GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- REGISTRO MODAL -->
 
-    <br><br><br>   
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Registrarme</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="registro-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="registro-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="registro-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary" style="margin-left: 170px;">Registrarme</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- INICIO DE CONTENIDO -->
+
+    <br><br><br>
     <h2><strong>LA MEJOR ROPA DE TEMPORADA</strong></h2>
     <br>
     <p class="p1">El mejor vestido de la fiesta. Encuentra tu mejor look para celebraciones.</p>
-        <br><br>
-    <h3 >Conjuntos</h3>
+    <br><br>
+    <h3>Conjuntos</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img conjunto1.jpg" alt="" class="img-fluid" onclick="conjunto1();"> <br><br><p> Conjunto de disfraz <br> S/75.00</p>
+                <img src="./img/mujer.img/img/mujeres/img conjunto1.jpg" alt="" class="img-fluid"
+                    onclick="conjunto1();"> <br><br>
+                <p> Conjunto de disfraz <br> S/75.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -73,28 +167,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img conjunto2.jpg" alt="" class="img-fluid" onclick="conjunto2();"><br><br><p> Conjunto casual <br> S/89.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img conjunto3.jpg" alt="" class="img-fluid" onclick="conjunto3();"><br><br><p> Conjuto Negro<br> S/60.00</p>
+                <img src="./img/mujer.img/img/mujeres/img conjunto2.jpg" alt="" class="img-fluid"
+                    onclick="conjunto2();"><br><br>
+                <p> Conjunto casual <br> S/89.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -103,13 +184,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img conjunto4.jpg" alt="" class="img-fluid" onclick="conjunto4();"><br><br><p> Conjunto cardigan <br> S/95.00</p>
+                <img src="./img/mujer.img/img/mujeres/img conjunto3.jpg" alt="" class="img-fluid"
+                    onclick="conjunto3();"><br><br>
+                <p> Conjuto Negro<br> S/60.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -118,20 +201,39 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img/mujeres/img conjunto4.jpg" alt="" class="img-fluid"
+                    onclick="conjunto4();"><br><br>
+                <p> Conjunto cardigan <br> S/95.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
     </div>
 
-    <h3 >vestido de Mujer</h3>
+    <h3>vestido de Mujer</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img vestido1.jpg" alt="" class="img-fluid" onclick="vestido1();"><br><br><p> Vestido casual <br> S/65.00</p>
+                <img src="./img/mujer.img/img/mujeres/img vestido1.jpg" alt="" class="img-fluid"
+                    onclick="vestido1();"><br><br>
+                <p> Vestido casual <br> S/65.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -140,28 +242,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img vestido2.jpg" alt="" class="img-fluid" onclick="vestido2();"><br><br><p> Vestido Abierto<br> S/55.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img.vestido5.jpg" alt="" class="img-fluid" onclick="vestido3();"><br><br><p>Vestido Recto<br> S/70.00</p>
+                <img src="./img/mujer.img/img/mujeres/img vestido2.jpg" alt="" class="img-fluid"
+                    onclick="vestido2();"><br><br>
+                <p> Vestido Abierto<br> S/55.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -170,13 +259,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img vestido4.jpg" alt="" class="img-fluid" onclick="vestido4();"><br><br><p>Vestido Primaveral <br> S/90.00</p>
+                <img src="./img/mujer.img/img/mujeres/img.vestido5.jpg" alt="" class="img-fluid"
+                    onclick="vestido3();"><br><br>
+                <p>Vestido Recto<br> S/70.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -185,51 +276,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
-            </div>
-
-        </div>
-    </div>
-
-
-    <h3 >Blusas</h3>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img blusa1.jpg" alt="" class="img-fluid" onclick="blusa1();"><br><br><p>Blusa Ant <br> S/115.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img blusa2.jpg" alt="" class="img-fluid" onclick="blusa2();"><br><br><p>Blusa con Botones<br> S/99.99</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img blusa3.jpg" alt="" class="img-fluid" onclick="blusa3();"><br><br><p>Blusa cuello Tortuga <br> S/120.00</p>
+                <img src="./img/mujer.img/img/mujeres/img vestido4.jpg" alt="" class="img-fluid"
+                    onclick="vestido4();"><br><br>
+                <p>Vestido Primaveral <br> S/90.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -238,36 +293,23 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
-                    </select>
-                </form>    
-            </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img blusa4.jpg" alt="" class="img-fluid" onclick="blusa4();"><br><br><p>Blusa Vadin <br> S/83.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
                     </select>
-                </form>    
+                </form>
             </div>
 
         </div>
     </div>
 
 
-    <h3 >Poleras</h3>
+    <h3>Blusas</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.polera1.jpg" alt="" class="img-fluid" onclick="polera1();"><br><br><p>Polera Inter <br> S/91.00</p>
+                <img src="./img/mujer.img/img/mujeres/img blusa1.jpg" alt="" class="img-fluid"
+                    onclick="blusa1();"><br><br>
+                <p>Blusa Ant <br> S/115.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -276,28 +318,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.polera2.jpg" alt="" class="img-fluid" onclick="polera2();"><br><br><p>Polera Multicolor <br>S/120.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.polera3.jpg" alt="" class="img-fluid" onclick="polera3();"><br><br><p>Polera Desert <br> S/96.00</p>
+                <img src="./img/mujer.img/img/mujeres/img blusa2.jpg" alt="" class="img-fluid"
+                    onclick="blusa2();"><br><br>
+                <p>Blusa con Botones<br> S/99.99</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -306,13 +335,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.polera4.jpg" alt="" class="img-fluid" onclick="polera4();"><br><br><p>Polera Ancient <br> S/112.00</p>
+                <img src="./img/mujer.img/img/mujeres/img blusa3.jpg" alt="" class="img-fluid"
+                    onclick="blusa3();"><br><br>
+                <p>Blusa cuello Tortuga <br> S/120.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -321,20 +352,39 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img/mujeres/img blusa4.jpg" alt="" class="img-fluid"
+                    onclick="blusa4();"><br><br>
+                <p>Blusa Vadin <br> S/83.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
     </div>
 
-    <h3 >Pantalones</h3>
+
+    <h3>Poleras</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img pantalon1.jpg" alt="" class="img-fluid" onclick="pantalon1();"><br><br><p>Pantalon Basic <br> S/69.00</p>
+                <img src="./img/mujer.img/img.polera1.jpg" alt="" class="img-fluid" onclick="polera1();"><br><br>
+                <p>Polera Inter <br> S/91.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -343,28 +393,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img pantalon2.jpg" alt="" class="img-fluid" onclick="pantalon2();"><br><br><p>Pantalon Fly <br>S/55.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img pantalon3.jpg" alt="" class="img-fluid" onclick="pantalon3();"><br><br><p>Pantalon Joger <br> S/120.00</p>
+                <img src="./img/mujer.img/img.polera2.jpg" alt="" class="img-fluid" onclick="polera2();"><br><br>
+                <p>Polera Multicolor <br>S/120.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -373,13 +409,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img/mujeres/img pantalon4.jpg" alt="" class="img-fluid" onclick="pantalon4();"><br><br><p>Pantalon Fit<br>S/100.00</p>
+                <img src="./img/mujer.img/img.polera3.jpg" alt="" class="img-fluid" onclick="polera3();"><br><br>
+                <p>Polera Desert <br> S/96.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -388,20 +425,38 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img.polera4.jpg" alt="" class="img-fluid" onclick="polera4();"><br><br>
+                <p>Polera Ancient <br> S/112.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
     </div>
 
-    <h3 >Tacones</h3>
+    <h3>Pantalones</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.tacon1.jpg" alt="" class="img-fluid 1ertacon" onclick="tacon1();"><br><br><p>Tacon Jordan <br>S/90.00</p>
+                <img src="./img/mujer.img/img/mujeres/img pantalon1.jpg" alt="" class="img-fluid"
+                    onclick="pantalon1();"><br><br>
+                <p>Pantalon Basic <br> S/69.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -410,28 +465,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.tacon2.jpg" alt="" class="img-fluid" onclick="tacon2();"><br><br><p> Tacones abiertos<br> S/140.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.tacon3.jpg" alt="" class="img-fluid" onclick="tacon3();"><br><br><p>Tacones altos <br> S/170.00</p>
+                <img src="./img/mujer.img/img/mujeres/img pantalon2.jpg" alt="" class="img-fluid"
+                    onclick="pantalon2();"><br><br>
+                <p>Pantalon Fly <br>S/55.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -440,13 +482,15 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="./img/mujer.img/img.tacon5.jpg" alt="" class="img-fluid" onclick="tacon4();"><br><br><p>Tacon Vittore<br> S/210.00</p>
+                <img src="./img/mujer.img/img/mujeres/img pantalon3.jpg" alt="" class="img-fluid"
+                    onclick="pantalon3();"><br><br>
+                <p>Pantalon Joger <br> S/120.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -455,15 +499,103 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img/mujeres/img pantalon4.jpg" alt="" class="img-fluid"
+                    onclick="pantalon4();"><br><br>
+                <p>Pantalon Fit<br>S/100.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
     </div>
-   
-    
+
+    <h3>Tacones</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img.tacon1.jpg" alt="" class="img-fluid 1ertacon" onclick="tacon1();"><br><br>
+                <p>Tacon Jordan <br>S/90.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img.tacon2.jpg" alt="" class="img-fluid" onclick="tacon2();"><br><br>
+                <p> Tacones abiertos<br> S/140.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img.tacon3.jpg" alt="" class="img-fluid" onclick="tacon3();"><br><br>
+                <p>Tacones altos <br> S/170.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="./img/mujer.img/img.tacon5.jpg" alt="" class="img-fluid" onclick="tacon4();"><br><br>
+                <p>Tacon Vittore<br> S/210.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
     <br><br>
 
 
@@ -474,14 +606,14 @@
             <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-       
+
         <p class="pie_texto">
-            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
-            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop .
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable.
             Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
             moda a nivel mundial.
         </p>
-        </div>
+    </div>
     </div>
     <footer>
         <br></br>
@@ -502,7 +634,7 @@
                         <a href="#">Políticas de privacidad</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Productos</p>
                     <div>
@@ -538,78 +670,79 @@
     </footer>
 
     <script>
-        function conjunto1(){
+        function conjunto1() {
             alert("Conjunto de Bruja - Vestido de Tela Negra y Sombrero - Incluye accesorios")
         }
-        function conjunto2(){
+        function conjunto2() {
             alert("Mono de Tirantes Color Flesh - Body Mujer Color negro - Zapatillas Blanca")
         }
-        function conjunto3(){
+        function conjunto3() {
             alert("Casaca Dahla Mujer Color Negro - Pantalon korda Mujer Color Negro - Botines de Cuerina")
         }
-        function conjunto4(){
+        function conjunto4() {
             alert("Vestido Sport Mujer Peach - Blusa Manga Larga Blanco - Lentes de Sol")
         }
-        function vestido1(){
+        function vestido1() {
             alert("Vestido Largo Celeste - Estilo Floral hasta el Tobillo - Material Poliester")
         }
-        function vestido2(){
+        function vestido2() {
             alert("Falda de Tu con Motivo Tie-Dye - Body Mujer Color Celeste Bebe - Exterior:Algodón y Poliamida-Interior:Poliéster y Spandex/Élastanne")
         }
-        function vestido3(){
+        function vestido3() {
             alert("Vestido Largo Celeste - Mldi Kawaii Vintage Sexy - Moda Coreana")
         }
-        function vestido4(){
+        function vestido4() {
             alert(" Overlap Long - Sleeve Maxi Dress - Estilo Primaveral")
         }
-        function blusa1(){
+        function blusa1() {
             alert(" Blusa Ant Manga Larga Color Beige - Con Diseños Bordeados - Estilo Otoño")
         }
-        function blusa2(){
+        function blusa2() {
             alert(" Blusa Top Cropped con Botones Celeste - Top Corto de Algodón de Canalé con ceullo redondo - Mangas Largas")
         }
-        function blusa3(){
+        function blusa3() {
             alert(" Blusa Cuello de Tortuga Color Beige - Dobladillo Recto con Logo Lateral - 100% Cachemira")
         }
-        function blusa4(){
+        function blusa4() {
             alert(" Blusa Vadim Color White - Prenda Fresca y de Corte Suelto - Material:Linio y Algodón")
         }
-        function polera1(){
+        function polera1() {
             alert("Polera Inter Color Crudo - Cuello con Cierre - Material:Nylon y Spandex")
         }
-        function polera2(){
+        function polera2() {
             alert("Polera Multicolor Black/Gris - Modelo F-YVONNE con Capucha - Material:Algodón y Poliéster")
         }
-        function polera3(){
+        function polera3() {
             alert("Polera Desert Color Regio - Capucha y Bolsillo Delantero - Estilo Casula de Algodón")
         }
-        function polera4(){
+        function polera4() {
             alert("Polera Ancient Mujer Color Gris - Capucha y Bolsillo Delantero - Estilo Casual de Algodón")
         }
-        function pantalon1(){
+        function pantalon1() {
             alert("Pantalon Basic Jogger Color Celeste - Deportivo/Casual -  Material:Algodón y Poliéster")
         }
-        function pantalon2(){
+        function pantalon2() {
             alert("Pantalon Fly Up Winter Mujer - Deportivo/Casual -  Material:Algodón y Poliéster")
         }
-        function pantalon3(){
+        function pantalon3() {
             alert("Pantalon Jogger Mujer - Franela Camel Color Rojo -  Estilo Casual de Algodón")
         }
-        function pantalon4(){
+        function pantalon4() {
             alert("Pantalon Korda Mujer Serena - Modelo Regular -  Estilo Casual de Algodón y Tela Drill")
         }
-        function tacon1(){
+        function tacon1() {
             alert("Tacon NIKE Air Jordan 23 - Retro Max de Bota Tacon Aguja -  Estilo Sport/Elegant")
         }
-        function tacon2(){
+        function tacon2() {
             alert("Sandalias Tacón Abierto  - Elegantes Tacones de Aguja con Hebilla al Tobillo - Zapatos de vestir, Fiesta de Noche, Baile de Graduación")
         }
-        function tacon3(){
+        function tacon3() {
             alert("Tacón Alto con Plataforma Color Dorado - Elegantes Tacones de Aguja con Hebilla al Tobillo - Ideal para Fiesta, Boda y más")
         }
-        function tacon4(){
+        function tacon4() {
             alert("Tacón Vittore - modelo Katarina 001 - Material Sintético/Punnta Cuadrada")
         }
     </script>
 </body>
+
 </html>

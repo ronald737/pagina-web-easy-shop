@@ -1,67 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accesorios</title>
+    <title>Accesorios • EasyShop</title>
+
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
-
-    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Open+Sans&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
-    
     <link rel="stylesheet" href="./accesorios.css">
-   
+
+    <!-- TIPO DE LETRA -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- MAIN APP -->
+    <script src="./main.js" type="module"></script>
+
 </head>
+
 <body>
-    <nav class="nav">
-        <div class="logo">Easy Shop</div>
-        <ul class="menu">
-            <li><a href="compras.html">Compras</a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="webmujer.html">Mujeres</a></li>
-            <li><a href="webhombre.html">Hombres</a></li>
-            <li><a href="webniños.html">Niños</a></li>
-            <li><a href="webaccesorios.html">Accesorios</a></li>
-            <li><a href="webnosotros.html">Nosotros</a></li>
-            <li><a href="webpersonalizar.html">Personalizar</a></li>
-            <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
-        </ul>
+    <!-- NAVEGADOR -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">EasyShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="compras.html">Compras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webhombre.html">Hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webmujer.html">Mujer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webniños.html">Niños</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webaccesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webnosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webpersonalizar.html">Personalizar</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#entrarModal">
+                        <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link logged-out" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        <i class="fa-solid fa-user-plus"></i> Registrarme</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logged-in" id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="contenedor">
-        <ul class="compra">
-            <li>Compra</li>
-            <li>Compra</li>
-            <li>Compra</li>
+    <!-- ENTRAR MODAL -->
 
-        </ul>
-        <ul class="listado">
-            <li>ahorrando</li>
-            <li>más</li>
-            <li>felíz</li>
-        </ul>
+    <div class="modal fade" id="entrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Iniciar Sesión</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <form id="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="login-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="login-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary w-100 mb-4">Iniciar Sesión</button>
+                    </form>
+                    <button type="button" id="loginGoogle" class="btn btn-info" style="margin-left: 50px;">
+                        Login with Google
+                    </button>
+
+                    <button type="button" id="loginGithub" class="btn btn-warning" style="margin-left: 50px;">
+                        Login with GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- REGISTRO MODAL -->
 
-    <br><br><br>   
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:white;">Registrarme</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="registro-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="registro-email" class="form-control mb-3" placeholder="Email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="registro-password" class="form-control mb-3" placeholder="******"
+                            required>
+                        <button type="submit" class="btn btn-primary" style="margin-left: 170px;">Registrarme</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- INICIO DE CONTENIDO -->
+
+    <br><br><br>
     <h2>Encuentra la mejor moda de la temporada</h2>
     <br>
     <p class="p1">Elije entre nuestras amplia variedad de modelos <br> variedad de calidades <br>y marcas</p>
-        <br><br>
+    <br><br>
 
-   
-    
+
+
     <h3>Gafas</h3>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Gafas-1.jpg" alt="" class="img-fluid" onclick="lente1();"> <br><br> <p>Ray-Ban - Lentes de sol <br> Precio S/90.00</p>
+                <img src="img/accesorios.img/Gafas-1.jpg" alt="" class="img-fluid" onclick="lente1();"> <br><br>
+                <p>Ray-Ban - Lentes de sol <br> Precio S/90.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -70,28 +167,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Gafas-2.jpg" alt="" class="img-fluid" onclick="lente2();"><br><br> <p>Anteojos Aqua <br> Precio S/35.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Gafas-3.jpg" alt="" class="img-fluid" onclick="lente3();"><br><br> <p>Classic Gafas Redondo <br> Precio S/60.00</p>
+                <img src="img/accesorios.img/Gafas-2.jpg" alt="" class="img-fluid" onclick="lente2();"><br><br>
+                <p>Anteojos Aqua <br> Precio S/35.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -100,13 +183,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Gafas-4.jpg" alt="" class="img-fluid" onclick="lente4();"><br><br> <p>Gafas de sol clubmaster negras <br> Precio S/40.00</p>
+                <img src="img/accesorios.img/Gafas-3.jpg" alt="" class="img-fluid" onclick="lente3();"><br><br>
+                <p>Classic Gafas Redondo <br> Precio S/60.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -115,9 +199,25 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="img/accesorios.img/Gafas-4.jpg" alt="" class="img-fluid" onclick="lente4();"><br><br>
+                <p>Gafas de sol clubmaster negras <br> Precio S/40.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
@@ -128,7 +228,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Bolso-1.jpg" alt="" class="img-fluid" onclick="bolso1();"><br><br> <p>Cartera KLEHOPE <br> Precio S/150.00</p>
+                <img src="img/accesorios.img/Bolso-1.jpg" alt="" class="img-fluid" onclick="bolso1();"><br><br>
+                <p>Cartera KLEHOPE <br> Precio S/150.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -137,28 +238,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Cartera-1.jpg" alt="" class="img-fluid" onclick="bolso2();"><br><br> <p>Billetera corta plegada negro <br> Precio S/25.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/billetera.jpg" alt="" class="img-fluid" onclick="bolso3();"><br><br> <p>Billetera hombre - Levis <br> Precio S/20.00</p>
+                <img src="img/accesorios.img/Cartera-1.jpg" alt="" class="img-fluid" onclick="bolso2();"><br><br>
+                <p>Billetera corta plegada negro <br> Precio S/25.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -167,13 +254,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Bolso-2.jpg" alt="" class="img-fluid" onclick="bolso4();"><br><br> <p>Bolso de negocios de cuero <br> Precio S/250.00</p>
+                <img src="img/accesorios.img/billetera.jpg" alt="" class="img-fluid" onclick="bolso3();"><br><br>
+                <p>Billetera hombre - Levis <br> Precio S/20.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -182,9 +270,25 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="img/accesorios.img/Bolso-2.jpg" alt="" class="img-fluid" onclick="bolso4();"><br><br>
+                <p>Bolso de negocios de cuero <br> Precio S/250.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
@@ -196,7 +300,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/sombrero.jpg" alt="" class="img-fluid" onclick="sombrero1();"><br><br> <p>Sombrero de paja <br> Precio S/85.00</p>
+                <img src="img/accesorios.img/sombrero.jpg" alt="" class="img-fluid" onclick="sombrero1();"><br><br>
+                <p>Sombrero de paja <br> Precio S/85.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -205,28 +310,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/gorra-1.jpg" alt="" class="img-fluid" onclick="sombrero2();"><br><br> <p>Gorra Floyd Vintage Chocolate <br> Precio S/70.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/gorro-2.jpg" alt="" class="img-fluid" onclick="sombrero3();"><br><br> <p>Gorra Trucker <br> Precio S/40.00</p>
+                <img src="img/accesorios.img/gorra-1.jpg" alt="" class="img-fluid" onclick="sombrero2();"><br><br>
+                <p>Gorra Floyd Vintage Chocolate <br> Precio S/70.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -235,13 +326,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/gorro-3.jpg" alt="" class="img-fluid" onclick="sombrero4();"><br><br> <p>Gorra RVCA gris <br> Precio S/80.00</p>
+                <img src="img/accesorios.img/gorro-2.jpg" alt="" class="img-fluid" onclick="sombrero3();"><br><br>
+                <p>Gorra Trucker <br> Precio S/40.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -250,9 +342,25 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="img/accesorios.img/gorro-3.jpg" alt="" class="img-fluid" onclick="sombrero4();"><br><br>
+                <p>Gorra RVCA gris <br> Precio S/80.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
@@ -265,7 +373,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/Arete-1.jpg" alt="" class="img-fluid" onclick="aro1();"><br><br> <p>Aros Argolla Trenzada Acero <br> Precio S/60.00</p>
+                <img src="img/accesorios.img/Arete-1.jpg" alt="" class="img-fluid" onclick="aro1();"><br><br>
+                <p>Aros Argolla Trenzada Acero <br> Precio S/60.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -274,28 +383,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/arete-2.jpg" alt="" class="img-fluid" onclick="aro2();"><br><br> <p>Aretes Aestethick <br> Precio S/40.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/collar-1.jpg" alt="" class="img-fluid" onclick="aro3();"><br><br> <p>Cadena Colgante con Dije <br> Precio S/130.00</p>
+                <img src="img/accesorios.img/arete-2.jpg" alt="" class="img-fluid" onclick="aro2();"><br><br>
+                <p>Aretes Aestethick <br> Precio S/40.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -304,13 +399,30 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="img/accesorios.img/collar-1.jpg" alt="" class="img-fluid" onclick="aro3();"><br><br>
+                <p>Cadena Colgante con Dije <br> Precio S/130.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6 col-xl-6 col-xxl-3">
-                <img src="img/accesorios.img/collar-2.jpg" alt="" class="img-fluid" onclick="aro4();"><br><br> <p>Marzue Collar Iris Marzué <br> Precio S/170.00</p>
+                <img src="img/accesorios.img/collar-2.jpg" alt="" class="img-fluid" onclick="aro4();"><br><br>
+                <p>Marzue Collar Iris Marzué <br> Precio S/170.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -319,28 +431,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
-            </div>
-            
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
-                <img src="img/accesorios.img/pulsera-1.jpg" alt="" class="img-fluid" onclick="aro5();"><br><br> <p>Pulsera Aqua Maria <br> Precio S/20.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
-                <img src="img/accesorios.img/pulsera-2.jpg" alt="" class="img-fluid" onclick="aro6();"><br><br> <p>Pulsera Fútbol negra <br> Precio S/40.00</p>
+                <img src="img/accesorios.img/pulsera-1.jpg" alt="" class="img-fluid" onclick="aro5();"><br><br>
+                <p>Pulsera Aqua Maria <br> Precio S/20.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -349,28 +447,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
-            </div>
-            
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
-                <img src="img/accesorios.img/pulsera-3.jpg" alt="" class="img-fluid" onclick="aro7();"><br><br> <p>Pulsera estilo Floral de plata  <br> Precio S/90.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
-                <img src="img/accesorios.img/pulsera-4.jpg" alt="" class="img-fluid" onclick="aro8();"><br><br> <p>Pulsera de perlas Heishi <br> Precio S/70.00</p>
+                <img src="img/accesorios.img/pulsera-2.jpg" alt="" class="img-fluid" onclick="aro6();"><br><br>
+                <p>Pulsera Fútbol negra <br> Precio S/40.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -379,9 +463,41 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
+                <img src="img/accesorios.img/pulsera-3.jpg" alt="" class="img-fluid" onclick="aro7();"><br><br>
+                <p>Pulsera estilo Floral de plata <br> Precio S/90.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
+                <img src="img/accesorios.img/pulsera-4.jpg" alt="" class="img-fluid" onclick="aro8();"><br><br>
+                <p>Pulsera de perlas Heishi <br> Precio S/70.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
@@ -391,7 +507,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/reloj-1.jpg" alt="" class="img-fluid" onclick="reloj1();"><br><br> <p>Reloj Fossil Autocross <br> Precio S/450.00</p>
+                <img src="img/accesorios.img/reloj-1.jpg" alt="" class="img-fluid" onclick="reloj1();"><br><br>
+                <p>Reloj Fossil Autocross <br> Precio S/450.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -400,28 +517,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                 </form>   
-            </div>
-             
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/reloj-2.jpg" alt="" class="img-fluid" onclick="reloj2();"><br><br> <p>Reloj Análogo Aerostar <br> Precio S/280.00</p>
-                <form>
-                    <select>
-                        <option value="0">cantidad</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-    
-                    </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/reloj-3.jpg" alt="" class="img-fluid" onclick="reloj3();"><br><br> <p>Smart Watch <br> Precio S/180.00</p>
+                <img src="img/accesorios.img/reloj-2.jpg" alt="" class="img-fluid" onclick="reloj2();"><br><br>
+                <p>Reloj Análogo Aerostar <br> Precio S/280.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -430,13 +533,14 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                <img src="img/accesorios.img/reloj-4.jpg" alt="" class="img-fluid" onclick="reloj4();"><br><br> <p>Reloj Lorus <br> Precio S/150.00</p>
+                <img src="img/accesorios.img/reloj-3.jpg" alt="" class="img-fluid" onclick="reloj3();"><br><br>
+                <p>Smart Watch <br> Precio S/180.00</p>
                 <form>
                     <select>
                         <option value="0">cantidad</option>
@@ -445,14 +549,30 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-    
+
                     </select>
-                </form>    
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <img src="img/accesorios.img/reloj-4.jpg" alt="" class="img-fluid" onclick="reloj4();"><br><br>
+                <p>Reloj Lorus <br> Precio S/150.00</p>
+                <form>
+                    <select>
+                        <option value="0">cantidad</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </form>
             </div>
 
         </div>
     </div>
-    
+
     <br><br>
 
 
@@ -463,14 +583,14 @@
             <a href="http:\\www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="http:\\www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
         </div>
-       
+
         <p class="pie_texto">
-            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop . 
-            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable. 
+            El contenido de esta página web está protegido por copyright y es propiedad de Easy Shop .
+            La idea de negocio de E&S consiste en ofrecer moda y calidad al mejor precio de manera sustentable.
             Desde que se fundó en 2022, E&S ha crecido hasta convertirse en una de las principales compañías de
             moda a nivel mundial.
         </p>
-        </div>
+    </div>
     </div>
     <footer>
         <br></br>
@@ -491,7 +611,7 @@
                         <a href="#">Políticas de privacidad</a>
                     </div>
                 </div>
-    
+
                 <div class="col-xs-12 col-md-12 col-lg-4">
                     <p class="h5">Productos</p>
                     <div>
@@ -526,78 +646,79 @@
         </div>
     </footer>
     <script>
-         function lente1(){
+        function lente1() {
             alert("Lentes de Sol Ray Ban Round Metal - RB3447 001 - Clasico Redondo 50mm");
         }
-        function lente2(){
+        function lente2() {
             alert("JackJad Gafas de Sol Redondas de Metal - Lentes de Cristal Óptico de Calidad -  Diseño Clásico de Marca Retro");
         }
-        function lente3(){
+        function lente3() {
             alert("Gafas Pro Acme - Lnetes Transparentes  -  Marco de Metal Redondo Pequeño Retro");
         }
-        function lente4(){
+        function lente4() {
             alert("Gafas de Sol Club-Master - Metal Negro RB3716 - Gradiente Medio");
         }
-        function bolso1(){
+        function bolso1() {
             alert("Bolso Morado KLEHOPE 10 piezas - Cierre Magnético - Botones Magnéticos");
         }
-        function bolso2(){
+        function bolso2() {
             alert("Billetara Corta Negro - Plegada para Mujer - Estilo Sencila Europeo");
         }
-        function bolso3(){
+        function bolso3() {
             alert("Billetara Levis de Cuero Retro - Broche para Tarjetas de Crédito - Bolsillo Interior con Ranura y Cremallera");
         }
-        function bolso4(){
+        function bolso4() {
             alert("Bolso Maletin de Cuero para Negocios - Unisex Vintage con Correa Negra - Dos compartimientos interiores con forro de algodon con cremallera");
         }
-        function sombrero1(){
+        function sombrero1() {
             alert("Bolso Maletin de Cuero para Negocios - Unisex Vintage con Correa Negra - Dos compartimientos interiores con forro de algodon con cremallera");
         }
-        function sombrero2(){
+        function sombrero2() {
             alert("Gorra Floyd Vintage Chocolate - Ajuste de Correa en la parte posterior -Fabricado con algodón prelevado");
         }
-        function sombrero3(){
+        function sombrero3() {
             alert("Gorra Trucker Azul - Accesorios personalizados - Broche ajustable con parte posterior de Malla");
         }
-        function sombrero4(){
+        function sombrero4() {
             alert("Gorra RVCA color Charcoal/Gris - Estampado Jaspeado - 100% poliéster");
         }
-        function aro1(){
+        function aro1() {
             alert("Aro de Acero Inoxidable Trenzado Grueso - Bañado en Oro - Pendiente de Moda para Mujeres y Niñas");
         }
-        function aro2(){
+        function aro2() {
             alert("Aretes Aestethick Estilo Mosqueton - 2 piezas bañado en plata - Pendiente de Moda para Mujeres y Niñas");
         }
-        function aro3(){
+        function aro3() {
             alert("Collar corto de Monedas - Multiples capas de perlas - Cadena Clavicula");
         }
-        function aro4(){
+        function aro4() {
             alert("Empaque Especial Marzue - Cierre Ajustable de 40cm a 45cm - Con Piedra Circonita Bañado en Oro");
         }
-        function aro5(){
+        function aro5() {
             alert("Pulsera de Cristal de Cuarzo Natural - Cierre de Langosta Ajustable de 40 a 45cm - Unisex");
         }
-        function aro6(){
+        function aro6() {
             alert("Pulsera de Piedra Ónix y Hematita - Balon de Acero bañado en Plata- Estilo Fútbol");
         }
-        function aro7(){
+        function aro7() {
             alert("Pulsera Bañado en Oro - Cierre Ajustable de 40 a 45cm - Estilo Floral Bañado en Plata");
         }
-        function aro8(){
+        function aro8() {
             alert("Go2Boho Pulsera de Perla de Agua Natural - Cuentas de Disco Heishi - Ideal para un Estilo de Verano");
         }
-        function reloj1(){
+        function reloj1() {
             alert("Reloj Fossil Autocross - Correa de Cuero con Hebilla Simple - Resistente al agua");
         }
-        function reloj2(){
+        function reloj2() {
             alert("Reloj Análogo Michael Kors Mujer - Correa Poliuretano Multicolor - Dial Blanco");
         }
-        function reloj3(){
+        function reloj3() {
             alert("Apple Watch Series 4 - Black Aluminum - Llamadas, Reproduccion de audio, Bluetooth y más");
         }
-        function reloj4(){
+        function reloj4() {
             alert("Reloj Lorus Análogo - Pulsera de Cuero con Diseño Tipo Broche - Mica de Cristal Mineral");
         }                                                                                                                                                                                                                                                                                                                                          
     </script>
 </body>
+
 </html>
