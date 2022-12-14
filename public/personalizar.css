@@ -1,9 +1,11 @@
+
 /* NAVEGADOR */
 
-.navbar-brand,
-.nav-link {
+.navbar-brand, .nav-link {
+
     font-family: 'open sans';
 }
+
 
 .navbar-brand {
     font-size: 40px;
