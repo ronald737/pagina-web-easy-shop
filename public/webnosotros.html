@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./nosotros.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- <link rel="stylesheet" href="./estilos.css"> -->
 </head>
@@ -119,7 +120,7 @@
 
                         <br>
 
-                        <button id="btnSend">Enviar</button>
+                        <button id="btnSend" onclick="envio()">Enviar</button>
                         <div id="container" class="" col-md-12>
                         </div>
                     </form>
@@ -180,20 +181,13 @@
                 console.error("Error adding document: ", e);
             }
         })
+    </script>
 
-        window.addEventListener("DOMContentLoaded", async () => {
-            const querySnapshot = await getDocs(collection(db, "registros"));
-            querySnapshot.forEach((doc) => {
-                /*console.log(`${doc.id} => ${doc.data().nombre}`);
-                console.log(`${doc.id} => ${doc.data().apellido}`);
-                console.log(`${doc.id} => ${doc.data().direccion}`);*/
-
-
-                container.innerHTML = container.innerHTML +
-                    "<p style='text-align:center; margin-top:30px; font-weight:bold; color:black;'>Gracias por registrate " + doc.data().nombre + " !!!<p>"
-            });
-
-        })
+    <script type="text/javascript">
+        function envio(){
+            swal('¡ GRACIAS POR PARTICIPAR !','Aprovecha nuestras ofertas','success');
+        }
+        
     </script>
 
     </div>
