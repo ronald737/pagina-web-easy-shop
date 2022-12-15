@@ -35,6 +35,12 @@ iframe {
     width: 400px;
     height: 400px;
 }
+/*INDO NOSOTROS*/
+.col{
+    position: absolute;
+    margin: 0 100px 0 950px;
+}
+
 
 /* PIE DE PÁGINA */
 
@@ -125,6 +131,7 @@ footer {
 form {
     max-width: 600px;
     background-color: white;
+
     margin-top: 1em;
     border-radius: 12px;
     padding: 2em 2em 2em;

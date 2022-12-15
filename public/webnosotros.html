@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="./nosotros.css">
     <!-- TIPO DE LETRA -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <!-- MAIN APP -->
-    <script src="./main.js" type="module"></script>
+     <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 
-   
+
 </head>
 
 <body>
@@ -141,12 +142,12 @@
 
     <div class="container1">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <div class="img">
                     <img src="./img/nosotros.img/nosotros (2).jpg" alt="" width="600px" height="900px">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col">
 
                 <br>
                 <p class="parrafo-1">Somos una marca peruana que está dispuesto a brindarte el mejor servicio de
@@ -217,7 +218,7 @@
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        import { getFirestore, collection, addDoc, getDocs, } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -237,6 +238,7 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
+        
 
 
 
@@ -267,10 +269,10 @@
     </script>
 
     <script type="text/javascript">
-        function envio(){
-            swal('¡ GRACIAS POR PARTICIPAR !','Aprovecha nuestras ofertas','success');
+        function envio() {
+            swal('¡ GRACIAS POR PARTICIPAR !', 'Aprovecha nuestras ofertas', 'success');
         }
-        
+
     </script>
 
     </div>
