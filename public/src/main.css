@@ -1,0 +1,60 @@
+.navbar-brand, .nav-link{
+    font-family: 'open sans';
+}
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'open sans';
+    margin-left: 50px;
+}
+nav{
+    padding: 15px;
+    width: 100%;
+}
+nav li a{
+    margin-right: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+.pie_pagina{
+    padding: 20px 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(46, 45, 45);
+}
+          
+.pie_pagina .redes_sociales{
+    text-align: center;
+    padding-bottom: 10px;
+}
+          
+.pie_pagina .redes_sociales i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 25px;
+}
+          
+.pie_pagina .pie_texto{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+footer{
+    background-color:  rgb(184, 177, 177);
+    padding-bottom: 25px;
+}
+footer p.h5{
+    text-align: justify;  
+    padding-left: 30%;
+}
+          
+footer a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+} 
+footer a:hover{
+    color: black;
+}

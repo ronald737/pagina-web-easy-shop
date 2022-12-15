@@ -21,7 +21,7 @@
     <!-- MAIN APP -->
     <script src="./main.js" type="module"></script>
 
-</head> 
+</head>
 
 <body>
     <a href="https://whatsapp.com" class="btn-wsp" target="_blank">
@@ -229,36 +229,34 @@
 
     <br><br>
 
-    <h2>Ingresa tu comentario</h2>
-    
-                        <form id="formulario">
-                            <div class="form-group">
-                                <label>
-                                <input type="text" class="form-control" id="titulo" placeholder="Ingresa tu nombre"
-                                    autofocus>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                <textarea id="descripcion" rows="3" placeholder="Ingresa tu comentario"
-                                    class="form-control"></textarea>
-                                </label>
-                            </div>
-                            <button id="btnGuardar" class="btn btn-primary">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-                <div id="container" class="" col-md-6>
+    <h2>Ingresa tu comentario :p</h2>
 
-                </div>
-            </div>
+    <form id="formulario" class="formComent">
+        <div class="form-group">
+            <label  class="laberlComent">
+                <input type="text" class="form-control labelComent" id="titulo" placeholder="Ingresa tu nombre" autofocus>
+            </label>
         </div>
+        <div class="form-group">
+            <label class="labelComent">
+                <textarea id="descripcion" rows="3" placeholder="Ingresa tu comentario" class="form-control"></textarea>
+            </label>
+        </div>
+        <button id="btnGuardar" class="btn btn-primary btnEnviar">Enviar</button>
+    </form>
+    </div>
+    </div>
+    <div id="container" class="" col-md-6>
+
+    </div>
+    </div>
+    </div>
     </div>
 
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        import { getFirestore, collection, addDoc, getDocs, query, where, onSnapshot} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+        import { getFirestore, collection, addDoc, getDocs, query, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
 
