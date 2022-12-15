@@ -143,6 +143,7 @@ form{
     padding: 2em 2em 2em 2em;
     background: rgba(4, 184, 255, 0.001);
     border: 0.2px solid rgb(0, 0, 0);
+    background-image: url(./img/portada.img/navida2.jpg);
 
     
   
@@ -151,12 +152,8 @@ form{
 label{
     width: 500px;
     margin: 10px;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-
+}
+input{
+    background-color: black;
 }
 
