@@ -131,29 +131,33 @@ h2{
     text-align: center;
 }
 
-/* estilo de index */
+/* ESTILO FORMULARIO INDEX*/
 
-form{
-    
-    margin: auto ;
+.formComent {
+
+    margin: auto;
     max-width: 600px;
-    box-shadow: 5px 10px 5px rgb(4, 106, 165) ;
+    box-shadow: 5px 10px 5px rgb(4, 106, 165);
     margin-top: 2em;
-    border-radius: 12px ;
+    border-radius: 12px;
     padding: 2em 2em 2em 2em;
     background: rgba(4, 184, 255, 0.001);
     border: 0.2px solid rgb(0, 0, 0);
     background-image: url(./img/portada.img/navida2.jpg);
-
-    
-  
 }
 
-label{
+.labelComent {
     width: 500px;
     margin: 10px;
 }
-input{
+
+.inputComent {
     background-color: black;
+}
+textarea{
+   resize: none;  
+}
+.btnEnviar{
+    margin-left: 230px;
 }
 
