@@ -1,3 +1,4 @@
+
 /* NAVEGADOR */
 
 .navbar-brand,
@@ -22,8 +23,8 @@ nav li a {
 
 /* I M G */
 img {
-    margin-left: 300px;
-    margin-top: 10px;
+    /* margin-left: 300px;*/
+    margin-top: 10px; 
 }
 
 h4,
@@ -34,11 +35,6 @@ p {
 iframe {
     width: 400px;
     height: 400px;
-}
-/*INDO NOSOTROS*/
-.col{
-    position: absolute;
-    margin: 0 100px 0 950px;
 }
 
 
@@ -91,7 +87,7 @@ footer a:hover {
 
 /* FORMULARIO */
 
-.container {
+.datos {
     border: 2px solid red;
     max-width: 600px;
     margin: auto;
@@ -111,6 +107,15 @@ button {
     margin-left: 200px;
     padding: 15px;
 }
+.btn-primary{
+    margin: 0;
+    padding: 6px 12px;
+}
+.btn-registrarme{
+    margin: 0 0 0 60px !important;
+    padding: 6px 100px !important;
+}
+
 
 h5 {
     text-align: center;
